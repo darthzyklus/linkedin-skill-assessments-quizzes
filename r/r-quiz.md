@@ -45,7 +45,7 @@ xvect
 
 #### Q6. In the image below, the data frame is named rates. The statement `sd(rates[, 2])` returns 39. As what does R regard Ellen's product ratings?
 
-![Image](https://i.ibb.co/jvPPSRk/Captura-de-pantalla-2020-07-14-a-las-20-58-09.png)
+![Image](https://i.ibb.co/jvPPSRk/Captura-de-pantalla-2020-07-14-a-las-20-58-09.png?raw=png)
 
 - [ ] sample with replacement
 - [ ] population
@@ -75,7 +75,7 @@ xvect
 
 #### Q10. In the image below, the data frame on lines 1 through 4 is named StDf. State and Capital are both factors. Which statement returns the results shown on lines 6 and 7?
 
-![Image](https://i.ibb.co/8DL1HCV/Captura-de-pantalla-2020-07-14-a-las-18-33-34.png)
+![Image](https://i.ibb.co/8DL1HCV/Captura-de-pantalla-2020-07-14-a-las-18-33-34.png?raw=png)
 
 - [ ] StDf[1:2,-3]
 - [x] StDf[1:2,1]
@@ -216,29 +216,32 @@ print(deliver)
 
 #### Q25. Which set of two statements-followed by the cbind() function-results in a data frame named vbound?
 
-- [ ]
+- [ ] &shy;
 
-```
+```r
 v1<-list(1,2,3)
 v2<-list(c(4,5,6))
 vbound<-cbind(v1,v2)
 ```
 
-- [ ]
+- [ ] &shy;
 
-```
+```r
 v1<-c(1,2,3)
 v2<-list(4,5,6))
 vbound<-cbind(v1,v2)
 ```
 
-- [ ]
+- [x] &shy;
 
-```
+```r
 v1<-c(1,2,3)
 v2<-c(4,5,6))
 vbound<-cbind(v1,v2)
 ```
+
+- [ ] &shy;
+      none
 
 #### Q26. ournames is a character vector. What values does the statement below return to Cpeople?
 
@@ -251,7 +254,7 @@ vbound<-cbind(v1,v2)
 
 #### Q27. What is the value of names(v[4])?
 
-```
+```r
 v <- 1:3
 names(v) <- c("a", "b", "c")
 v[4] <- 4
@@ -264,7 +267,7 @@ v[4] <- 4
 
 #### Q28. Which of the following statements doesn't yield the code output below. Review the following code. What is the result of line 3?
 
-```
+```r
 x <- c(1, 2, 3, 4)
 Output: [1] 2 3 4
 ```
@@ -274,9 +277,9 @@ Output: [1] 2 3 4
 - [ ] x[c(-1, 0, 0, 0)]
 - [x] x[c(-1, 2, 3, 4)]
 
-#### Q29. Given DFMerged <- merge(DF1, DF2) and the image below, how manu rows are in DFMerged?
+#### Q29. Given DFMerged <- merge(DF1, DF2) and the image below, how many rows are in DFMerged?
 
-![image](https://user-images.githubusercontent.com/52632898/139964478-9806a163-76b2-4f99-97bc-c925fdf6e388.png)
+![image](https://user-images.githubusercontent.com/52632898/139964478-9806a163-76b2-4f99-97bc-c925fdf6e388.png?raw=png)
 
 - [ ] 6
 - [ ] 9
@@ -285,7 +288,7 @@ Output: [1] 2 3 4
 
 #### Q30. What does R return in response to the final statement?
 
-```
+```r
 x<-5:8
 names(x)<-letters[5:8]
 x
@@ -300,7 +303,7 @@ x
 
 #### Q31. How do you return "October" from x in this code?
 
-```
+```r
 x<-as.Date("2018-10-01")
 ```
 
@@ -311,7 +314,7 @@ x<-as.Date("2018-10-01")
 
 #### Q32. How will R respond to the last line of this code?
 
-```
+```r
 fact<-factor(c("Rep","Dem","Dem","Rep"))
 fact
 [1] Rep Dem Dem Rep
@@ -326,7 +329,7 @@ fact[2]<-"Ind"
 
 #### Q33. What does R return?
 
-```
+```r
 StartDate<- as.Date("2020/2/28")
 StopDate<- as.Date("2020/3/1")
 StopDate-StartDate
@@ -339,15 +342,28 @@ StopDate-StartDate
 
 #### Q34. What does the expression `mtrx * mtrx` do ?
 
-```
+```r
 > mtrx <- matrix( c(3,5,8,4), nrow= 2,ncol=2,byrow=TRUE)
 > newmat <- mtrx * mtrx
 ```
 
 - [ ] it transpose **mtrx**
 - [ ] it premultiplies the current **netwmat** row by the **newmat** column.
-- [x] it returns the results of a matrix multiplication
-- [ ] It squares each cell in **mtrx**
+- [ ] it returns the results of a matrix multiplication
+- [x] It squares each cell in **mtrx**
+
+```r
+> newmat
+     [,1] [,2]
+[1,]    9   25
+[2,]   64   16
+
+# The `%*%` operator gives matrix multiplication
+> mtrx %*% mtrx
+     [,1] [,2]
+[1,]   49   35
+[2,]   56   56
+```
 
 #### Q35. Which function in R combines different values into a single object?
 
@@ -363,28 +379,28 @@ StopDate-StartDate
 - [x] Rprofile.site
 - [ ] Rstatus.site
 
-#### Q36. If **mdf** is a data frame, which statement is true ?
+#### Q37. If **mdf** is a data frame, which statement is true ?
 
 - [x] **ncol(mdf)** equals **length(mdf)**.
 - [ ] The number of rows must equals the number of columns.
 - [ ] The legnth of any column in **mdf** may differ from any other column in **mdf**
 - [ ] All columns must have the same data type.
 
-#### Q37. A list can contain a list as an element. **MyList** has five columns, and the third column's item is a list of three items. How do you put all seven values in **MyList** into a single vector?
+#### Q38. A list can contain a list as an element. **MyList** has five columns, and the third column's item is a list of three items. How do you put all seven values in **MyList** into a single vector?
 
 - [ ] vector(MyList, length = 7)
 - [ ] coerce(MyList, nrows = 1)
 - [x] unlist(MyList)
 - [ ] coerce(MyList, nrows = 7)
 
-#### Q38. Which strings could be returned by the function ls(path = "^V")?
+#### Q39. Which strings could be returned by the function ls(path = "^V")?
 
 - [ ] ANOVAData, anovadata
 - [x] VisitPCA, VarX
 - [ ] VisitPCA, varx
 - [ ] Xvar, Yvar
 
-#### Q39. StDf is a data frame. Based on this knowledge, what does this statement return?
+#### Q40. StDf is a data frame. Based on this knowledge, what does this statement return?
 
 ```r
 StDf[, -1]
@@ -395,27 +411,27 @@ StDf[, -1]
 - [x] all but the first column of StDf
 - [ ] only the first column of StDf
 
-#### Q40. Which statement enables you to interactively open a single file?
+#### Q41. Which statement enables you to interactively open a single file?
 
 - [ ] file.list()
 - [ ] file.select()
 - [x] file.choose()
 - [ ] file.open()
 
-#### Q41. How are these data types alike: logical, integer, numeric, and character?
+#### Q42. How are these data types alike: logical, integer, numeric, and character?
 
 - [ ] Each is a type of data frame.
 - [x] Each is a type of atomic vector.
 - [ ] Each is a type of complex vector.
 - [ ] Each is a type of raw vector.
 
-#### Q42. What does the `MyMat[ ,3]` subsetting operation return for this code?
+#### Q43. What does the `MyMat[ ,3]` subsetting operation return for this code?
 
 ```r
 MyMat = matrix(c(7, 9, 8, 6, 10, 12),nrow=2,ncol=3, byrow = TRUE)
 ```
 
-- [ ]
+- [ ] :
 
 ```
 [ ,3]
@@ -423,19 +439,19 @@ MyMat = matrix(c(7, 9, 8, 6, 10, 12),nrow=2,ncol=3, byrow = TRUE)
 [2, ] 12
 ```
 
-- [x]
+- [x] :
 
 ```
 [1] 8 12
 ```
 
-- [ ]
+- [ ] :
 
 ```
 [1] 10 12
 ```
 
-- [ ]
+- [ ] :
 
 ```
 [ ,3]
@@ -443,34 +459,271 @@ MyMat = matrix(c(7, 9, 8, 6, 10, 12),nrow=2,ncol=3, byrow = TRUE)
 [2, ] 12
 ```
 
-#### Q43. What does the function `power.anova.test` return?
+#### Q44. What does the function `power.anova.test` return?
 
 - [ ] the probability of making a Type I error
 - [x] the probability of not making a Type II error
 - [ ] the probability of making a Type II error
 - [ ] the probability of not making a Type I error
 
-#### Q44. Review the statement below. What is the effect of `covariate:factor` on the analysis?
+#### Q45. Review the statement below. What is the effect of `covariate:factor` on the analysis?
 
 ```r
 result <- lm(outcome ~ covariate + factor + covariate:factor, data = testcoef)
 ```
 
 - [ ] It forces the intercepts of the individual regressions to zero.
-- [ ] It calls for the effect of the covariate within each level of the factor.
+- [x] It calls for the effect of the covariate **within each level of the factor**.
 - [ ] It calls for the effect of each variable from covariate to factor in testcoef.
 - [ ] It forces the covariate to enter the equation before the factor levels.
 
-#### Q45. A variable whose type is numeric can contain which items?
+```r
+# Example call to demonstrate.  `Species` is a Factor.  Petal.Length, Petal.Width are numeric.
+# see `help(formula)` for more details on the formula specification.  `:` is "effect modification" or "interaction"
+
+> summary(lm(Petal.Length ~ Petal.Width + Species + Petal.Width:Species, data = iris))
+...
+Petal.Width:Speciesversicolor   1.3228     0.5552   2.382   0.0185 *
+Petal.Width:Speciesvirginica    0.1008     0.5248   0.192   0.8480
+...
+```
+
+#### Q46. A variable whose type is numeric can contain which items?
 
 - [ ] integers and real values
 - [ ] integers, real, and raw values
 - [x] real values only
 - [ ] integers, real, and logical values
 
-#### Q46. What is the legitimate name of a data class in R?
+#### Q47. What is the legitimate name of a data class in R?
 
 - [ ] property
 - [x] integer
 - [ ] number
 - [ ] variant
+
+#### Q48. How do you extract the values above the main diagonal from a square matrix named `Rmat`?
+
+- [x] `Rmat[upper.tri(Rmat)]`
+- [ ] `upper.triangular(Rmat)`
+- [ ] `upper.tri(Rmat)`
+- [ ] `upper.diag(Rmat)`
+
+#### Q49. `x` is a vector of type integer, as shown on line 1 below. What is the type of the result returned by the statement > median(x)?
+
+`x <- c(12L, 6L, 10L, 8L, 15L, 14L, 19L, 18L, 23L, 59L)`
+
+- [ ] numeric
+- [ ] integer
+- [ ] single
+- [x] double
+
+#### Q50. A list named `a` is created using the statement below. Which choice returns TRUE?
+
+`a <- list("10", TRUE, 5.6)`
+
+- [x] is.list(a[1])
+- [ ] is.numeric(a[1])
+- [ ] is.logical(a[1])
+- [ ] is.character(a[1])
+
+#### Q51. How do you obtain the row numbers in a data frame named `pizza` for which the value of `pizza$delivery_min` is greater than or equal to 30?
+
+- [ ] :
+
+```r
+late_delivery <- pizza$delivery_min >= 30
+index_late <- index(late_delivery)
+index_late
+```
+
+- [ ] :
+
+```r
+late_delivery <- pizza$delivery_min >= 30
+rownum_late <- rownum(late_delivery)
+rownum_late
+```
+
+- [x] :
+
+```r
+late_delivery <- pizza$delivery_min >= 30
+which_late <- which(late_delivery)
+which_late
+```
+
+- [ ] :
+
+```r
+late_delivery <- pizza$delivery_min >= 30
+late <- piza$late_delivery
+pizza$late
+```
+
+#### Q52. Which function returns `[1] TRUE FALSE TRUE`?
+
+`indat <- c("Ash Rd","Ash Cir","Ash St")`
+
+- [ ] grepl("[Rd|Ave|Dr|St]", indat)
+- [x] grepl("Rd|Ave|Dr|St", indat)
+- [ ] grepl("Rd,Ave,Dr,St", indat)
+- [ ] grepl("[Rd],[Ave],[Dr],[St]", indat)
+
+#### Q53. Which statement returns the fourth row of a data frame named _fish_?
+
+- [x] fish[4, ]
+- [ ] fish( ,4)
+- [ ] fish(4, )
+- [ ] fish{4, }
+
+#### Q54. What is the value of _csum_?
+
+```
+a <- c(1.2, 2, 3.5, 4)
+b <- c(1.2, 2.2, 3.5, 4)
+csum <-sum(a == b)
+```
+
+- [ ] 8
+- [x] 3
+- [ ] 0.2
+- [ ] 21.6
+
+#### Q54. A list named _a_ is created using the statement below. Which choice returns TRUE?
+
+```
+a <- list("10", TRUE, 5.6)
+```
+
+- [x] is.list(a[1])
+- [ ] is.numeric(a[1])
+- [ ] is.logical(a[1])
+- [ ] is.character(a[1])
+
+#### Q55. What is the result of these three lines of code?
+
+```r
+vect1 <- c(1:4)
+vect2 <- c(1:2)
+vect1 * vect2
+```
+
+- [x] [1] 1 4 3 8
+- [ ] ERROR
+- [ ] [1] 1 2 3 4 1 2
+- [ ] [1] 1 2 3 4 2 4 6 8
+
+#### Q56. Which choice returns [1] "2019-09-28"?
+
+- [ ] format(as.POSIXct("Sep-28-2019 07:54:31 AM",format='%b%d%Y'))
+- [ ] as.POSIXlt("Sep-28-2019 07:54:31 AM",format='%b-%d-%Y')
+- [ ] as.POSIXct("Sep-28-2019 07:54:31 AM UTC")
+- [x] format(as.POSIXct("Sep-28-2019 07:54:31 AM UTC",format='%b-%d-%Y'))
+
+#### Q57. The variable potus is a character vector, as shown in line 1 below. Wich statement returns the results shown?
+
+```r
+1 potus <- c("GHW Bush", "Clinton", "GW Bush", "Obama")
+
+Results: [1] "GHW BUsh" "Clinton" "Obama"
+```
+
+- [ ] potus[-"GW Bush"]
+- [ ] potus[1:2 4]
+- [x] potus[-3]
+- [ ] potus[1,2,4]
+
+#### Q58. A data frame contains two factor -fact1 and fact2- and a numerical outcome variable. Which statement returns results that do NOT include an interaction term?
+
+- [x] anova(lm(outcome ~ fact1 : fact2))
+- [ ] anova(lm(outcome ~ fact1 \* fact2))
+- [ ] anova(lm(outcome ~ fact1 + fact2))
+- [ ] anova(lm(outcome ~ fact1 + fact2 + fact1 : fact2))
+
+#### Q59. Review line 1 below. What does the statement on line 2 return?
+
+```r
+1 myvect <- c(-2,-1,0)
+2 as.logical(myvect)
+```
+
+- [ ] [1]-2 -1 0
+- [x] [1]TRUE TRUE FALSE
+- [ ] [1]FALSE FALSE TRUE
+- [ ] [1]NA NA NA
+
+#### Q60. Which option setting can cause difficulty if you want to add to a variable's possible values after you have designed an object's initial data structure?
+
+- [ ] ()OPTIONS(colnames(x)<-NULL)
+- [ ] ()OPTIONS(max.print=5)
+- [ ] ()OPTIONS(continue="... ",
+- [x] ()OPTIONS(stringAsFactors=TRUE
+
+#### Q61. In this image below, the data frame on lines 1 through 4 is named StDf. StDf contains no factors. Why does statement on line 6 return "character" while the statement on line 7 returns "data.frame"?
+
+![image](https://drive.google.com/uc?export=view&id=16KtAh4dhn2fyImFbcX8KLDgRqNHIFtKm)
+
+- [ ] Each value in the first row is a character value, but the values in the third column include both character and numeric values.
+- [ ] By specifying the final row, 3, and no column specified, StDf[3, ] calls for the complete structure.
+- [x] Columns in a data frame are vectors generally containing a single type of data. Rows in a data frame are lists, but they belong to a structure that has multiple rows: the data frame.
+- [ ] Each value in the first column is a character value, but the values in the third row include both character and numeric values.
+
+#### Q62. Review line 1. What does the statement on line 3 return?
+
+```r
+mtrx <- matrix(1:6, 3, 2)
+
+mtrx[, -1]
+```
+
+![image](https://drive.google.com/uc?export=view&id=1ntrHVnNfCRvXfKjbpavh7CiIsv7izsJr)
+
+- [ ] &shy;
+
+- [ ] &shy;
+
+- [ ] &shy;
+
+- [x] [1] 4 5 6
+
+#### Q63. Why does sum(!is.na(pizza$week)) return the number of rows with valid, non-NA values in the column named week?
+
+- [x] The exclamation point in !is.na(pizza$week) reverses the meaning of the test it precedes.
+- [ ] !is.na(pizza$week) counts the number of NA values in the column.
+- [ ] !is.na(pizza$week) returns a vector of TRUE/FALSE values, in which TRUE is treated as a 0 and FALSE as a 1.
+- [ ] !is.na(pizza$week) counts the number of non-missing values in the column.
+
+#### Q64. How do you get documentation of an installed and loaded R package named dplyr and packages with dplyr as an alias?
+
+- [ ] help(dplyr)
+- [ ] ? dplyr
+- [x] ?? dplyr
+- [ ] Press the F1 key.
+
+#### Q65. In the image below, the data frame named iris includes a numeric vector named Petal.Length. Do the functions labeled Pair 1 and Pair 2 return the same information?
+
+![image](https://github.com/ManchurianMan/images/blob/main/petals.png?raw=true)
+
+- [x] No, both the length and the class of the returned structures are different.
+- [ ] Yes, both pairs of statements return an object with the same length and class.
+- [ ] No, the length is the same but the class is different.
+- [ ] No, the class is the same but the length is different.
+
+#### Q66. The **\_** for R are the main feature that make it different from the original S language.
+
+- [ ] closure rules
+- [x] scoping rules
+- [ ] environment rules
+- [ ] None of the above
+
+[reference](https://bookdown.org/rdpeng/rprogdatascience/scoping-rules-of-r.html)
+
+#### Q67. Which of the following is a base package for R programming ?
+
+- [x] tools
+- [ ] util
+- [ ] lang
+- [ ] All of the above
+
+[reference](https://www.geeksforgeeks.org/packages-in-r-programming/)

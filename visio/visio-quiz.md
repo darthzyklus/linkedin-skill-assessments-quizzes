@@ -1,6 +1,6 @@
 ## Visio
 
-#### Q1. You've created a timeline by using the Timeline template in the Schedule template category. You've just learned that project has been extended by another month. How do you change the end date on the timeline?
+#### Q1. You've created a timeline by using the Timeline template in the Schedule template category. You've just learned that the project has been extended by another month. How do you change the end date on the timeline?
 
 - [ ] Double-click the timeline, change the Finish date, and then click OK.
 - [ ] Select the timeline shape, then drag the control handle on the right end of the timeline to the right.
@@ -87,19 +87,19 @@
 
 - [ ] A
 
-![image](images/001.png)
+![image](images/001.png?raw=png)
 
 - [x] B
 
-![image](images/002.png)
+![image](images/002.png?raw=png)
 
 - [ ] C
 
-![image](images/003.png)
+![image](images/003.png?raw=png)
 
 - [ ] D
 
-![image](images/004.png)
+![image](images/004.png?raw=png)
 
 #### Q10. Some Business Process Model Notation (BPMN) shapes are further annotated by attaching a callout shape. Which option is associated with a callout shape?
 
@@ -113,7 +113,7 @@
 - [ ] the center of the page
 - [x] the shape's pin position
 - [ ] the shape's center of gravity
-- [ ] the origin on the rulers
+- [ ] the origin of the rulers
 
 #### Q12. Which is one of the template categories in the Visio Standard desktop app?
 
@@ -124,7 +124,7 @@
 
 #### Q13. What does the icon in the lower-right corner of the organizational shape indicate?
 
-![image](images/005.png)
+![image](images/005.png?raw=png)
 
 - [ ] Belt shape
 - [x] hidden subordinates
@@ -140,7 +140,7 @@
 
 #### Q15. You added a container with no exclusions to a page. It looks like shapes are in the container, but when you move the container, the shapes do not move. How do you give the container and shapes a specific relationship?
 
-- [ ] Use the Container Tools Format tab and under Membership, use Select Contents to add the shapes.
+- [ ] Use the Container Tools Format tab, and under Membership, use Select Contents to add the shapes.
 - [ ] Center the container over the top of the shapes.
 - [x] Select all the shapes to be added, right-click, and select Container \> Add to Underlying Container.
 - [ ] Select the container and use the commands in the Format tab to add the shapes.
@@ -180,7 +180,7 @@
 - [ ] Hold down the Tab key while dragging the selection handle.
 - [ ] Hold down the Shift key while dragging the selection handle.
 
-#### Q21. How do you view a Visio diagram in full-screen view, i.e., with no ribbon or windows?
+#### Q21. How do you view a Visio diagram in a full-screen view, i.e., with no ribbon or windows?
 
 - [ ] Press Shift+F7.
 - [ ] Press Shift+F5.
@@ -210,7 +210,7 @@
 
 #### Q25. Which of these options is available when you select some shapes and then click the arrow on the Position button in the Arrange group on the Home tab?
 
-![image](images/006.png)
+![image](images/006.png?raw=png)
 
 - [x] Auto Align
 - [ ] Auto Space
@@ -222,7 +222,7 @@
 - [ ] to simply show data in the form of text, or to show text plus other symbols related to data, such as currency symbols
 - [x] to show conditions; to visualize data in grouped percentages, amounts, or degrees; and simply to represent data in yes-or-no format
 - [ ] to show percentages, ratings, progressions, scores, and amounts for comparing symbols and identifying symbol performance
-- [ ] to fill shapes with color according to their data, such as identifying all shapes of a color as "on" and different colored shapes as "off"
+- [ ] to fill shapes with color according to their data, such as identifying all shapes of color as "on" and different colored shapes as "off"
 
 #### Q27. Which is _not_ a way to disable AutoConnect with the Quick Shapes menu?
 
@@ -290,7 +290,7 @@
 - [x] Ctrl+Shift+W
 - [ ] Esc
 
-#### Q33. What is the unique feature of rack equipment shapes that would lead you to think that the rack and the equipment shape have active connections points?
+#### Q33. What is the unique feature of rack equipment shapes that would lead you to think that the rack and the equipment shape have active connection points?
 
 - [x] They look like 2D shapes, yet behave like lines, dynamic connectors, and other one-dimensional shapes.
 - [ ] They look like 3D shapes, yet behave like lines, dynamic connectors, and other two-dimensional shapes.
@@ -304,9 +304,70 @@
 - [ ] .xps
 - [ ] .pdf
 
-#### Q35.Which of the following is a type of shape data list from which users can select an entry or can enter a new value?
+#### Q35. Which of the following is a type of shape data list from which users can select an entry or enter a new value?
 
 - [ ] Visio list
 - [ ] list
-- [x] variable list
+- [x] vari list
 - [ ] fixed list
+
+#### Q36. Which is not one of the seven properties in the Layer Properties dialog box?
+
+- [x] Lock
+- [ ] Group
+- [ ] Active
+- [ ] Color
+
+#### Q37. Where are the commands you need to change the position or alignment of the text block in a shape?
+
+- [x] on the **home** tab, in the **Paragraph** goup
+- [ ] on the **home** tab, in the **Tools** goup
+- [ ] on the **Design** tab, in the **Alignment** goup
+- [ ] on the **Design** tab, in the **Paragraph** goup
+
+#### Q38. The Function shape data field in flowchart shapes automatically displays what text when the shape is placed into a swimlane.
+
+- [ ] the header text of the swimlane
+- [x] the value of the swimlane's Title Shape Data field
+- [ ] the name of the swimlane phase where the shape resides
+- [ ] the value of the Owner shape data field
+
+[!reference](https://support.microsoft.com/en-us/office/create-a-cross-functional-flowchart-in-visio-for-the-web-3546da67-a092-431a-b47a-bbb808edf581)
+
+#### Q39. Which is not an example of a reason that a shape designer might use sets of shapes grouped together to create a more sophisticated appearance or behavior?
+
+- [x] to display text in multiple places on the shape
+- [ ] to protect the alignment of sub shapes within the group
+- [ ] to prevent different parts of the shape from responding differently to external changes
+- [ ] to display different colors on different parts of the grouped shape
+
+**EXPLANATION** (Others do)
+[!reference](https://support.microsoft.com/en-us/office/clarify-the-structure-of-diagrams-by-using-containers-and-lists-4da621a4-3572-4c9b-9559-bbe4f6c9b08f)
+
+#### Q40. Which of the four levels of the diagram design hierarchy includes alternate colors and shape designs so you can add your own flair to a drawing while retaining the overall look?
+
+- [x] variant
+- [ ] effects
+- [ ] themes
+- [ ] quick styles
+
+#### Q41. When using AutoConnect, what determines the four shapes that will appear in the AutoConnect mini toolbar?
+
+- [ ] They are the four **Quick Shapes** selected in the Visio options.
+- [ ] They are the four most recently used shapes
+- [ ] They are the four most frequently used shapes
+- [x] They are the first four shapes in the **Quick Shapes** section of the current stencil
+
+#### Q42. Which is one of the eight supported Visio shape data types?
+
+- [ ] XML
+- [ ] Integer
+- [ ] Floating Point
+- [x] Fixed List
+
+#### Q43. You're able to select a shape on your drawing, but you can't work with it as you expect. What could be preventing you from working with this shape after it is selected?
+
+- [ ] The shape is protected against selection
+- [ ] The shape is connected to another shape
+- [x] The shape is part of a locked layer
+- [ ] The shape is in a group

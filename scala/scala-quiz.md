@@ -83,7 +83,7 @@ val x = (1234, "Active")
 - [ ] Method
 - [x] Null
 
-**Reference**: [Null in Scala Standard library](https://www.scala-lang.org/api/current/scala/Null.html). The question is a bit incorrect - Null is a subtype of every type _except those of value classes_
+[Null in Scala Standard library](https://www.scala-lang.org/api/current/scala/Null.html). The question is a bit incorrect - Null is a subtype of every type _except those of value classes_
 
 #### Q11. For the for-yield construct, is the scope separate between for-body and yield-body?
 
@@ -106,7 +106,7 @@ for {
 - [ ] using regex
 - [ ] using monads
 - [ ] using string matching
-- [ ] using case classes
+- [x] using case classes
 
 Note: ambiguous question, it's not clear what kind of [pattern matching](https://docs.scala-lang.org/tour/pattern-matching.html) is meant here.
 
@@ -136,7 +136,7 @@ val z = y::List('c')
 - [ ] `scala.exception.TryFinally`
 - [x] `scala.util.Try`
 
-**Reference**: [scala.util.Try](https://www.scala-lang.org/api/current/scala/util/Try.html)
+[scala.util.Try](https://www.scala-lang.org/api/current/scala/util/Try.html)
 
 #### Q16. What is the data type of y after this code is executed?
 
@@ -156,7 +156,7 @@ val y = (math floor 3.1415 * 2)
 - [ ] `^`
 - [ ] `-`
 
-**Reference**: [Pattern Matching](https://docs.scala-lang.org/tour/pattern-matching.html)
+[Pattern Matching](https://docs.scala-lang.org/tour/pattern-matching.html)
 
 #### Q18. You have created an array using val. Can you change the value of any element of the array—and why or why not?
 
@@ -260,7 +260,7 @@ def main () {
 - [ ] `%`
 - [ ] `&`
 
-**Reference**: [Repeated Parameters in Scala](https://www.baeldung.com/scala/repeated-parameters)
+[Repeated Parameters in Scala](https://www.baeldung.com/scala/repeated-parameters)
 
 #### Q30. What is the code below equivalent to?
 
@@ -294,7 +294,7 @@ myClass.foreach(println _)
 - [x] prepared statement
 - [ ] SQL view
 
-**Reference**: [PreparedStatement from Java](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) which is also used in Scala
+[PreparedStatement from Java](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) which is also used in Scala
 
 #### Q34. Which is _not_ a member of the collections hierarchy?
 
@@ -363,42 +363,37 @@ myClass.foreach(println _)
 
 [Source:](https://docs.scala-lang.org/overviews/collections/sets.html)
 
-#### Q43. What's the best way to execute code in the background in a separate thread?
-
-- [ ] AltFuture
-- [ ] Future
-- [ ] AltProcess
-- [ ] AltThread
-
-#### Q44. What do you call a function defined in a block?
+#### Q43. What do you call a function defined in a block?
 
 - [ ] private function
 - [ ] block function
-- [ ] local function
+- [x] local function
 - [ ] method
 
-#### Q45. What do you call a Scala method that is parametrized by type as well as by value?
+A function defined within a block of code, such as within a method or another function, is called a local function. This is because it is only visible and accessible within the scope of the block in which it is defined, and is not accessible outside of that block.
+
+#### Q44. What do you call a Scala method that is parametrized by type as well as by value?
 
 - [ ] multimode method
-- [ ] polymorphic method
+- [x] polymorphic method
 - [ ] closure
 - [ ] collection method
 
-#### Q46. What type of exception is thrown when a precondition is violated?
+#### Q45. What type of exception is thrown when a precondition is violated?
 
 - [x] IllegalArgumentException
 - [ ] NumberFormatException
 - [ ] NullPointerExcepetion
 - [ ] MalformedParameterException
 
-#### Q47. In scala what is precondition?
+#### Q46. In scala what is precondition?
 
 - [ ] a constraint on where a method may be called from
 - [ ] a constraint on values passed to a methode constructor
 - [x] a class of predifined error messages
 - [ ] a class of Boolean operators
 
-#### Q48. What would you change in this code to make it execute in parallel?
+#### Q47. What would you change in this code to make it execute in parallel?
 
 ```
  val myNums = (1 to 500).toList
@@ -410,28 +405,21 @@ myClass.foreach(println _)
 - [ ] Change **val** to **val.par**
 - [ ] Change **toList** to **toParallelList**
 
-#### Q49. What is a free variable?
+#### Q48. What is a free variable?
 
 - [x] a variable defined outside a function
 - [ ] a variable referenced in a function that is not assigned a value by that function
 - [ ] a variable that has a global scope
 - [ ] a variable defined in a class and available to all methods in that class
 
-#### Q50. What is the difference between .equals() and == ?
-
-- [x] **==** is wrapper of **.equals()** and checks for Nulls
-- [ ] They do the exact same thing.
-- [ ] == cannot be applied to String.
-- [ ] == won't work on objects
-
-#### Q51. What's the best way to execute code in the background in a separate thread?
+#### Q49. What's the best way to execute code in the background in a separate thread?
 
 - [ ] AltThread
 - [ ] AltFuture
 - [ ] AltProcess
 - [x] Future
 
-#### Q53. What value does this code return?
+#### Q50. What value does this code return?
 
 ```scala
 x= List(1,2,4); x(1)?
@@ -441,3 +429,93 @@ x= List(1,2,4); x(1)?
 - [ ] 1
 - [ ] Nil
 - [x] 2
+
+#### Q51. Which data type does Scala use instead of null for optional values?
+
+- [ ] Nil
+- [x] Option
+- [ ] Singleton
+- [ ] Collection
+
+In Scala, the Option data type is used instead of null for optional values. It is a container that can either hold a value or be empty, and it is used to represent the presence or absence of a value. This makes it safer to work with than using null, as it eliminates the risk of null pointer exceptions.
+
+#### Q52. What is equivalent to this code?
+
+```val a = "baz"
+s"Foo $a?"
+```
+
+- [x] "Foo " + a + "?"
+
+#### Q53. Which expression is one way to iterate over a collection and generate a collection of each iteration's result?
+
+- [x] for-yield
+- [ ] for-collect
+- [ ] for-collect until
+- [ ] collectuntil
+- for-yield is one way to iterate over a collection and generate a collection of each iteration's result. The for loop with the yield keyword is used to iterate over a collection and generate a new collection with the results of each iteration.
+
+#### Q54. Which statement accesses the third element of an array named foo?
+
+- [x] foo[2]
+- [ ] foo(3)
+- [ ] foo[3]
+- [ ] foo(2)
+- In many programming languages, arrays are indexed starting at 0, so the first element of the array is at index 0, the second element is at index 1, and so on. Therefore, to access the third element of an array named "foo", you would use the index 2 (since the array is indexed starting at 0). This can be done using the syntax foo[2] or foo(2) depending on the programming language. In some languages like Java, you can use foo[2] or foo[3] to access the third element.
+
+#### Q55. What data type would you use to store an immutable collection of objects when you don't know how many members will be in the collection?
+
+- [ ] Tuple
+- [x] List
+- [ ] Object
+- [ ] Array
+- You would use a List data type to store an immutable collection of objects when you don't know how many members will be in the collection. Lists are indexed collections of elements that can be accessed by their position in the list, and they are commonly used to store collections of items that need to be processed in order. Additionally, Lists are immutable, which means that their elements cannot be modified once they have been created, making them ideal for use cases where data integrity is important.
+
+#### Q56. From where do all classes in Scala inherit?
+
+- [x] AnyRef
+- [ ] AnyColl
+- [ ] AnyVal
+- [ ] AnyClass
+- All classes in Scala inherit from the AnyRef class by default. AnyRef is the base class for all reference types in Scala, and it is equivalent to the java.lang.Object class in Java. AnyVal is the base class for all value types in Scala, and Any is the base class for all types in Scala.
+
+#### Q57. In Scala, what is a precondition?
+
+- [ ] A class of boolean operators
+- [ ] A class of predefined error messages
+- [x] A constraint on values passed to a method or constructor
+- [ ] A constraint on where a method may be called from
+- A precondition in Scala is a constraint on the input values passed to a method or constructor, specifying the conditions that must be met for the method or constructor to execute correctly. It is used to check the validity of input values before the method or constructor is executed, and can be used to ensure that the method or constructor is called with the correct arguments.
+
+#### Q58. Which code sample will print the integers 1 through 4, each on a separate line?
+
+- [ ] for(i <- 0 to 4) println(i)
+- [x] for(i <- 0 to 3) println(i+1)
+- [ ] for(i <- 1 to 8 if i < 5) println(i)
+- [ ] for(i <- 1 to 4) println(i)
+- The correct answer is for(i <- 0 to 3) println(i+1) because it will start the iteration from 0 and end at 3, incrementing the value by 1 each time and printing it.
+
+#### Q59. Which operator should you use to take the intersection of two sets?
+
+- [x] &
+- [ ] ||
+- [ ] &&
+- [ ] %
+- The & or intersect method can be used to take the intersection of two sets in Scala.
+
+#### Q60. Which data type does Scala use instead of null for optional values?
+
+- [ ] Nil
+- [x] Option
+- [ ] Singleton
+- [ ] Collection
+- In Scala, the Option data type is used instead of null for optional values. It is a container that can either hold a value or be empty, and it is used to represent the presence or absence of a value. This makes it safer to work with than using null, as it eliminates the risk of null pointer exceptions.
+
+#### Q61. What is the difference between a Scala trait and an interface?
+
+- [x] A trait can have concrete implementations, while an interface cannot.
+- [ ] An interface can have concrete implementations, while a trait cannot.
+- [ ] Traits can be mixed together, while interfaces cannot.
+- [ ] Interfaces can be mixed together, while traits cannot.
+
+[reference](https://www.geeksforgeeks.org/difference-between-traits-and-abstract-classes-in-scala/)

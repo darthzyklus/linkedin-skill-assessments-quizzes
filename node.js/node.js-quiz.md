@@ -43,7 +43,7 @@
 - [x] createReadStream
 - [ ] readFileSync
 
-**Explanation:** _From official docs: [reference](https://nodejs.org/api/fs.html#fs_dir_read)
+**Explanation:** _From official docs: [reference](https://nodejs.org/api/fs.html#fscreatereadstreampath-options)
 To minimize memory costs, when possible prefer streaming via fs.createReadStream()._
 
 #### Q6. Which of the following DNS module methods uses the underlying OS facilities and does not necessarily perform any network communication?
@@ -91,7 +91,7 @@ To minimize memory costs, when possible prefer streaming via fs.createReadStream
 
 **Explanation:** From official docs: [reference](https://nodejs.org/en/docs/guides/debugging-getting-started/)
 
-#### Q11. How can you count the number of logical CPUs on the machine that is running Node?
+#### Q11. What command would you use to count the number of logical CPUs on the machine that is running Node?
 
 - [ ] node -p "process.cpus"
 - [ ] node -p "util.cpus().size"
@@ -181,25 +181,27 @@ To minimize memory costs, when possible prefer streaming via fs.createReadStream
 - [ ] `__flder`
 - [x] `__filename`
 
-#### 21. If the child_process module methods are in scope, what is a current way to execute the command ps -ef using a child process?
+#### Q21. If the child_process module methods are in scope, what is a current way to execute the command ps -ef using a child process?
 
 - [ ] spawn("ps -ef")
 - [x] exec("ps -ef")
 - [ ] exec("ps", "-ef")
 - [ ] fork("ps -ef")
 
-#### Q22.Which console method can be used to print the stack trace to the point of its execution?
+**Reference:** From official docs: [reference](https://nodejs.org/api/child_process.html#child_processforkmodulepath-args-options)
+
+#### Q22. Which console method can be used to print the stack trace to the point of its execution?
 
 - [ ] stack
 - [x] trace
 - [ ] debug
 - [ ] print
 
-#### Q23.When you run JavaScript in a Node.js application, which of the following elements in a Node.js stack actually executes that JavaScript?
+#### Q23. When you run JavaScript in a Node.js application, which of the following elements in a Node.js stack actually executes that JavaScript?
 
 - [ ] the libuv library
 - [ ] the c-ares library
-- [x] the VM (like VS or Chakra)
+- [x] the VM (like V8 or Chakra)
 - [ ] the repl module
 
 #### Q24. Looking at the code below, what does the console show?
@@ -218,21 +220,25 @@ server.listen(port, hostname, () => { console.log(`server running at http://${ho
 - [ ] server running at http://localhost:4000/
 - [x] server running at http://127.0.0.1:3000/
 
-#### Q25.What is the purpose of the path module?
+**Explanation:** From official docs: [reference](https://nodejs.org/api/http.html#httpcreateserveroptions-requestlistener)
+
+#### Q25. What is the purpose of the path module?
 
 - [x] to provide utilities to play with file and directory paths
 - [ ] to provide utilities to add and remove files
 - [ ] It is a retiring module.
 - [ ] to provide utilities to test files
 
-#### Q26.How do you make an HTTP server object active and listen to requests on certain ports?
+**Explanation:** From official docs: [reference](https://nodejs.org/api/path.html)
+
+#### Q26. How do you make an HTTP server object active and listen to requests on certain ports?
 
 - [ ] server. start
 - [ ] server.activate
 - [x] server.listen
 - [ ] server. run
 
-#### Q27.What does the code shown below do?
+#### Q27. What does the code shown below do?
 
 ```
 const fs = require('fs'); const os = require('os');
@@ -246,21 +252,23 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 - [ ] console logs system information
 - [ ] creates a file named data and append numbers
 
-#### Q28.How do you start a Node application, if the entry file is indexjs?
+#### Q28. How do you start a Node application, if the entry file is indexjs?
 
 - [ ] nodemon start
 - [ ] start index.js
 - [x] node index.js
 - [ ] node start
 
-#### Q29.What is the purpose of the file system (fs) module?
+#### Q29. What is the purpose of the file system (fs) module?
 
 - [ ] to provide methods to work with requests and responses
 - [x] to provide methods to work with files
 - [ ] to provide methods to work with databases
 - [ ] to find new file systems
 
-#### Q30.What is the Node LTS version?
+**Explanation:** From official docs: [reference](https://nodejs.org/api/fs.html)
+
+#### Q30. What is the Node LTS version?
 
 - [ ] It is the current unstable version and is to be avoided.
 - [ ] It is the version that will be retired soon.
@@ -278,10 +286,14 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 
 `console.log(arguments);`
 
-- [ ] ReferenceError: arguments is not defined
+- [x] ReferenceError: arguments is not defined
 - [ ] an empty string
 - [ ] undefined
-- [x] an object representing an array that has five elements
+- [ ] an object representing an array that has five elements
+
+**Explanation:**: [Reference Article](https://docs.google.com/document/d/1cdFn3qRKwsYjMtedZaMUd-RUGHYzxKxSnS_2043yqyk/edit?usp=sharing)
+The output of executing console.log(arguments); in Node.js will be a ReferenceError: arguments is not defined.
+The arguments object is not available in Node.js, as it is a specific feature of the browser JavaScript environment. In browsers, the arguments object is an array-like object that contains all of the arguments that were passed to a function. However, in Node.js, there is no arguments object, and the only way to access the arguments that were passed to a function is to explicitly declare them in the function's parameter list.
 
 #### Q33. Which choice is not a valid method on event emitters?
 
@@ -290,12 +302,14 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 - [ ] once
 - [ ] off
 
-#### Q34. Which special object is an instance of EventEmitter?Which special object is an instance of null?
+#### Q34. Which special object is an instance of EventEmitter?
 
-- [ ] process
+- [x] process
 - [ ] Buffer
 - [ ] root
-- [x] require
+- [ ] require
+
+[Reference](https://nodejs.org/docs/latest-v16.x/api/process.html)
 
 #### Q35. What is the command to get a list of available commands for Node.js?What is the command to get a list of available commands for Node.js?
 
@@ -395,12 +409,16 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 - [ ] dgram
 - [ ] inspector
 
+**Explanation:** From official docs: [reference](https://nodejs.org/api/async_hooks.html)
+
 #### Q49. Which Node.js module should you use when you need to decode raw data into strings?
 
 - [ ] buffer
 - [ ] util
 - [x] string_decoder
 - [ ] string_buffer
+
+[Refrence](https://nodejs.org/api/string_decoder.html)
 
 #### Q50. Which global object acts like a bridge between a Node script and the host operating system?
 
@@ -409,7 +427,10 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 - [x] process
 - [ ] child_process
 
-**Explanation:** _process is an global object and act like a bridge, the others aren't (please see https://nodejs.org/api/globals.html or https://nodejs.org/api/process.html#process_process)._
+**Explanation:** \_process is an global object and act like a bridge, the others aren't
+
+1. [source](https://nodejs.org/api/globals.html)
+2. [source](https://nodejs.org/api/process.html#process_process)
 
 #### Q51. Which statement is true about Node.js and threads?
 
@@ -425,7 +446,7 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 - [x] Event names must be camelCase strings.
 - [ ] The emit method allows a arbitrary set of arguments to be passed to the listener functions.
 - [ ] Any values returned by the listeners for an emitted events are ignored.
-- [ ] When an event emitter objeect emits an event, all of the functions attached to that specific event are called synchronously.
+- [ ] When an event emitter object emits an event, all of the functions attached to that specific event are called synchronously.
 
 #### Q53. Which core module in Node can you use to compile and run JavaScript code in a sandbox environment?
 
@@ -455,11 +476,11 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 #### Q56. Which choice is `not` a Node global object?
 
 - [ ] process
-- [ ] exports
+- [x] exports
 - [ ] setTimeout
-- [x] Buffer
+- [ ] Buffer
 
-**Explanation:** _process, exports and setTimeout are global objects, Buffer isn't (please see https://nodejs.org/api/globals.html)_
+**Explanation:** `exports` may appear to be global but is not. [Refrence](https://nodejs.org/api/globals.html#exports)
 
 #### Q57. What is the correct way to pipe a readable stream and a writable stream?
 
@@ -474,6 +495,8 @@ fs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) thr
 - [x] path.join
 - [ ] path.format
 - [ ] path.parse
+
+**Explanation:** From official docs: [reference](https://www.w3schools.com/nodejs/met_path_join.asp)
 
 #### Q59. What is the purpose of N-API?
 
@@ -558,9 +581,207 @@ console.log(person);
 - [ ] PHP
 - [ ] c
 
+[Refrence](https://nodejs.dev/en/learn/the-v8-javascript-engine/)
+
 #### Q68. How does it affect the performance of a web application when an execution path contains a CPU-heavy operation, such as calculating a long Fibonacci sequence?
 
 - [ ] As Node.js is asynchronous, this is handled by a libuv and a threadpool. The performance will not notably degrade.
 - [ ] As the application code runs asynchronously within a single thread, the execution will block, accepting no more requests until the operation is completed.
 - [ ] As Node.js is asynchronous, this is handled by a threadpool and the performance will not notably degrade.
-- [ ] The current thread will block until the executon is completed and the operating system will spawn new threads to handle incoming requests. This can exhaust the number of allowed threads (255) and degrade performance over time.
+- [x] The current thread will block until the execution is completed and the operating system will spawn new threads to handle incoming requests. This can exhaust the number of allowed threads (255) and degrade performance over time.
+
+#### Q69. What is used for parsing and running Javascript in Node.js?
+
+- [ ] EventLoop
+- [ ] Libuv
+- [x] Google V8
+- [ ] Express.js
+
+[Refrence](https://nodejs.dev/en/learn/the-v8-javascript-engine/)
+
+#### Q70. What is the importance of having good practices around status code in your response?
+
+- [x] It indicates success or failure to the client and helps with testing.
+- [ ] It is not important to have good practices regarding status codes
+- [ ] Response codes are the only way you can tell what is happening on the server.
+- [ ] It contains information about the current performance of the server.
+
+#### Q71. How can ECMAScript modules be used natively in Node?
+
+- [ ] ECMAScript modules cannot be used natively in Node.
+- [x] ECMAScript modules can be used natively in Node with the .mjs file extension
+- [ ] ECMAScript modules can be used natively in Node only by using a compiler like Babel.
+- [ ] ECMAScript modules can be used natively in Node only by using a bundle like webpack.
+
+[Reference](https://nodejs.org/docs/latest/api/packages.html#determining-module-system)
+
+#### Q72. When exploring the Node documentation's features, what are the stability ratings?
+
+- [x] They are an indication of the stability of Nodejs modules and usage recommendations.
+- [ ] They tell if a feature is ES6 compliant.
+- [ ] They are a Node command to validate stability of your code.
+- [ ] They tell if a feature is LTS (Long Term Supported).
+
+#### Q73. Which DNS module method uses the underlying OS facilities and does not necessarily perform any network communication?
+
+- [ ] resolve
+- [ ] reverse
+- [x] lookup
+- [ ] resolve4
+
+#### Q74. When you `require(something)`, where will Node.js attempt to `resolve(something)`?
+
+- [ ] the local .modules folder, then the parents' node_modules folder
+- [x] the local node_modules folder, then the parents' node_modules folder
+- [ ] the .modules folder under the home directory
+- [ ] a "something.js" file or a "something" folder, which exist on the same level as the requiring file
+
+#### Q75. An external library has its own codebase and license. It is not managed by the Node.js core team. Which choice is an external library that Node.js uses?
+
+- [ ] net
+- [x] openssl
+- [ ] cluster
+- [ ] events
+
+[Reference](https://nodejs.org/en/docs/meta/topics/dependencies/)
+
+#### Q76. What is the main purpose of the package-lock.json file?
+
+- [ ] to be a system file
+- [x] to provide an exact, single representation of the dependency tree
+- [ ] to serve as a module to export dependencies
+- [ ] to be a log for the application
+
+#### Q77. What response will you get when you send a get requests to the server with this code?
+
+```
+const http = require('http');
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World\n');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
+```
+
+- [ ] `server running at http://127.0.0.1:3000`
+- [ ] `server running at port 3000`
+- [ ] `server running at http://localhost:3000/`
+- [ ] `server running at http://localhost:4000/`
+- [x] `Hello World`
+
+[Refrence](https://nodejs.org/en/docs/guides/getting-started-guide/)
+
+Q78. What is the primary function of the npm command in Node.js development?
+
+- [ ] To install and manage Node.js versions.
+- [x] To manage packages and dependencies for Node.js projects.
+- [ ] To run JavaScript code in the browser.
+- [ ] To create and manage databases for Node.js applications.
+
+Explanation: The npm command is the Node Package Manager and is primarily used to manage packages and dependencies for Node.js projects. It allows developers to install, update, and manage packages from the npm registry.
+
+Q79. In Node.js, how can you handle asynchronous operations effectively to avoid callback hell?
+
+- [ ] Use global variables to share data between asynchronous functions.
+- [ ] Avoid using asynchronous functions altogether.
+- [ ] Use synchronous functions to ensure order of execution.
+- [x] Use Promises, async/await, or libraries like async.js to manage asynchronous operations in a more structured way.
+
+Explanation: To handle asynchronous operations effectively and avoid callback hell, it's recommended to use Promises, async/await, or libraries like async.js. These techniques provide a more structured and readable way to work with asynchronous code.
+
+Q80. Which core module in Node.js can be used to create web servers?
+
+- [ ] fs (File System)
+- [ ] http (HTTP Client)
+- [ ] url (URL Parsing)
+- [x] http (HTTP Server)
+
+Explanation: The http core module in Node.js can be used to create web servers. It provides the necessary functionality to handle HTTP requests and responses, making it possible to create web applications and APIs.
+
+Q81. What is the purpose of the os module in Node.js?
+
+- [ ] To work with the file system and perform I/O operations.
+- [ ] To create and manage child processes.
+- [x] To provide information about the host operating system, such as CPU, memory, and network interfaces.
+- [ ] To parse and manipulate URLs.
+
+Explanation: The os module in Node.js is used to provide information about the host operating system. It offers functions to access details about the CPU, memory, and network interfaces, making it useful for system-related tasks.
+
+Q82. How can you serve static files, such as HTML, CSS, and images, in a Node.js web application?
+
+- [ ] Use the url module to serve static files.
+- [ ] Embed the static files directly into JavaScript code.
+- [x] Use middleware like express.static in combination with the Express.js framework to serve static files.
+- [ ] Write custom JavaScript functions to serve each static file individually.
+
+Explanation: To serve static files in a Node.js web application, you can use middleware like express.static in combination with the Express.js framework. This middleware simplifies the process of serving HTML, CSS, images, and other static assets.
+
+Q84. How can you terminate a Node.js application programmatically?
+
+- [ ] Using the process.terminate() method
+- [ ] Sending a SIGSTOP signal
+- [ ] Using the exit() method
+- [x] Sending a SIGINT signal (e.g., with process.kill(process.pid, 'SIGINT')) or calling process.exit()
+
+Explanation : To terminate a Node.js application, you can either send a SIGINT signal or call process.exit() programmatically.
+
+Q85. What is the purpose of the child_process module in Node.js?
+
+- [ ] To create and manage child processes in a separate thread for parallel execution.
+- [ ] To provide access to child elements of JSON data.
+- [ ] To handle file I/O operations in a separate thread.
+- [x] To create and manage child processes for running external commands or scripts in a separate process.
+
+Explanation : The child_process module is used for creating and managing child processes to run external commands or scripts independently.
+
+Q86. What is the primary purpose of the cluster module in Node.js?
+
+- [ ] To manage user authentication and authorization.
+- [x] To take advantage of multicore systems by forking multiple Node.js processes and distributing the workload among them.
+- [ ] To create clusters of data storage for efficient data handling.
+- [ ] To provide clustering for network communication.
+
+Explanation : The primary purpose of the cluster module in Node.js is to utilize multicore systems efficiently by forking multiple Node.js processes to distribute workloads.
+
+Q87. Which method of the fs module in Node.js is used to check if a file exists asynchronously?
+
+- [ ] fs.existsSync
+- [x] fs.access
+- [ ] fs.existsSync
+- [ ] fs.stat
+
+Explanation: The fs.access method in Node.js is used to check if a file exists asynchronously. It is a recommended way to check for the existence of a file as it does not throw an error if the file doesn't exist, and it's more efficient than using fs.exists or fs.stat. If the file exists, the callback function will be called with no error. If the file doesn't exist, the callback will be called with an error.
+
+Q88. Which core module in Node.js is used for network programming and creating network applications?
+
+- [ ] http
+- [ ] os
+- [ ] fs
+- [x] net
+
+Explanation: The net core module in Node.js is used for network programming and creating network applications. It provides the necessary functionality for creating both TCP and Unix socket servers and clients.
+
+Q89. What is the purpose of the util.promisify method in Node.js?
+
+- [ ] To create a new Promise object.
+- [ ] To convert a function that returns a Promise into a callback-style function.
+- [x] To convert a callback-style function into a function that returns a Promise.
+- [ ] To handle synchronous operations.
+
+Explanation: The util.promisify method in Node.js is used to convert a callback-style function into a function that returns a Promise. It simplifies working with asynchronous functions by allowing you to use async/await syntax and Promise-based error handling.
+
+Q90. Which Node.js module provides an interface for interacting with the file system, including reading and writing files?
+
+- [ ] http
+- [x] fs
+- [ ] net
+- [ ] os
+
+Explanation: The fs module in Node.js provides an interface for interacting with the file system. It allows you to perform various file-related operations, including reading and writing files, creating directories, and more.

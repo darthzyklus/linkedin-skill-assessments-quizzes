@@ -30,6 +30,8 @@
 
 #### Q5. In this image, what does the circled button do?
 
+![image Q5](https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/main/eclipse/images/Eclipse-Q5.jpg)
+
 - [ ] It expands the comparison between the two files to include whitespace.
 - [ ] It allows you to delete the line of code to which it is connected.
 - [x] It allows changes from one version of a file to be applied to another version of the file.
@@ -64,6 +66,8 @@
 - [ ] the test class name
 
 #### Q10. In this image, what does the circled icon in the Problems view do?
+
+![image Q10](https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/main/eclipse/images/Eclipse-Q10.jpg)
 
 - [ ] It sends the currently selected problem to another view.
 - [ ] It indents the currently selected problem.
@@ -180,9 +184,9 @@
 #### Q26. When viewing an XML file in Eclipse, how can you view the file in a visual hierarchy (as opposed to code alone)?
 
 - [ ] You cannot do this in Eclipse.
-- [ ] Select the Editor tab for the XML file and then click the Design tab at the bottom of the editor window.
+- [x] Select the Editor tab for the XML file and then click the Design tab at the bottom of the editor window.
 - [ ] Double-click the open tab in the Editor.
-- [ ] In the Package Explorer, right-click the file and select Open With > Desgign Editor.
+- [ ] In the Package Explorer, right-click the file and select Open With > Design Editor.
 
 #### Q27. How can you view all the commits for a single file?
 
@@ -193,30 +197,30 @@
 
 #### Q28. In the image below, what does the circled button do?
 
-![image Q28](https://github.com/Beziu/linkedin-skill-assessments-quizzes/blob/master/eclipse/images/Eclipse-Q28.jpg)
+![image Q28](https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/main/eclipse/images/Eclipse-Q28.jpg)
 
-- [ ] It links the Editor and Navigator, causing the Editor to switch to the file selected in the Package Explorer and vice versa.
+- [x] It links the Editor and Navigator, causing the Editor to switch to the file selected in the Package Explorer and vice versa.
 - [ ] It expands Libraries when you are in the Java perspective.
 - [ ] It minimizes the left view
 - [ ] It collapses open folders in the Package Explorer view.
 
 #### Q29. Why might you create multiple debug configurations for the same project?
 
-- [ ] all of these answers
+- [x] all of these answers
 - [ ] to debug using a different JRE
 - [ ] to customize environment variables
 - [ ] to customize arguments
 
 #### Q30. You are searching for code using the Search dialog, and no results appear. What is a likely cause?
 
-- [ ] all of these answers
+- [x] all of these answers
 - [ ] The scope of the search is too narrow.
 - [ ] The type of search is not appropriate for the language of the code.
 - [ ] There is a typo in the search parameters.
 
 #### Q31. If you check out a branch in Eclipse and still see the old code, what is one possible problem?
 
-- [ ] Your project is not using source control.
+- [x] Your project is not using source control.
 - [ ] Your internet connection is down.
 - [ ] Your Git passwordis incorrect.
 - [ ] You need to refresh your project.
@@ -233,19 +237,19 @@
 - [ ] view the Design and Source tabs of one XML file at the same time
 - [ ] drag code from one Editor pane into another
 - [ ] split the editor either horizontally or vertically
-- [ ] all of these answers
+- [x] all of these answers
 
 #### Q34. Why might you run the Project > Clean command?
 
 - [ ] to remedy an issue where the source code seemsaccurate, but Git is indicating a merge conflict
 - [ ] to remedy syntax errors within the source code, causing the project not to build
 - [ ] to discard any existing build state before building the project, which can remedy issues where the source code seems accurate yet fails to build
-- [ ] to recompile only the source code files that have changed since the last build, which can shorten the build time for long-running builds
+- [x] to recompile only the source code files that have changed since the last build, which can shorten the build time for long-running builds
 
 #### Q35. How can you terminate debugging in the Debug view?
 
 - [ ] Right-click an item in the stack trace and select Terminate/Disconnect All.
-- [ ] all of these answers
+- [x] all of these answers
 - [ ] Right-click your application and select Terminate.
 - [ ] Right-click a thread and select Terminate and Remove.
 
@@ -255,3 +259,61 @@
 - [ ] You cannot do this in Eclipse.
 - [x] Create and run a configuration under Run > Debug Configurations > Remote Java Application.
 - [ ] Click Run > External Tools.
+
+#### Q37. What is the purpose of adding TODO in a comment?
+
+- [ ] It reminds you that you have work to do.
+- [x] Comments starting with TODO are listed in the Tasks view.
+- [ ] It creates automated email reminders of remaining tasks.
+- [ ] Comments starting with TODO are stored in the Task List view.
+
+#### Q38. When an assert fails where can you view the expected value as compared with the actual value?
+
+- [x] in the Failure Trace section of the JUnit view
+- [ ] in the Debug view
+- [ ] in the console
+- [ ] in the Outline view
+
+#### Q39. You want to use Bugzilla for managing tasks. What is a prerequisite?
+
+- [ ] Select Bugzilla on the list of repositories in the New Task window.
+- [ ] Add Bugzilla as a task repository.
+- [x] Install the Bugzilla plug-in.
+- [ ] Create a new local task in the Task List.
+
+#### Q40. Which of these is/are listed when searching via the Quick Access search bar?
+
+- [ ] files in the current workspace
+- [x] all of these answers
+- [ ] XML attribute values
+- [ ] Java members
+
+#### Q41. After opening a code file, you notice some of the syntax coloring is missing. What is the most likely problem?
+
+- [ ] The code has an error.
+- [ ] The code is in a language that is too new for Eclipse to support.
+- [ ] The code has the wrong file delimiters.
+- [x] The perspective you are using is out of date.
+
+#### Q42. When enabled for a specific section, what do the preferences in Java > Editor > Folding control?
+
+- [x] They cause the section of the class to be collapsed when opened in a new editor.
+- [ ] They cause those members to be placed automatically in a superclass, if present.
+- [ ] They cause class members to be automatically ordered in accordance with the preferences.
+- [ ] They cause the source code to autoformat as it is written.
+
+#### Q43. How can you specify arguments to be passed to an application or virtual machine when it is launched?
+
+- [ ] Click Run > Junit Configurations > Arguments.
+- [x] Click Run > Run Configurations > Arguments.
+- [ ] Right-click the project and select Arguments.
+- [ ] Click Run > Debug Configurations > Arguments.
+
+#### Q44. In this image, what does the circled button do?
+
+![image Q44](https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/main/eclipse/images/Eclipse-Q44.png)
+
+- [ ] It toggles collapsing and expanding all methods in a file.
+- [x] It toggles block selection mode in the editor.
+- [ ] It toggles showing whitespace in the code.
+- [ ] It toggles word wrap in the file.

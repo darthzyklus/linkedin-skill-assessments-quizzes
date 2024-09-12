@@ -13,10 +13,11 @@
 ```
 
 - [ ] ![A](images/Q1-A.jpg)
-- [x]
-  ![B](images/Q1-B.jpg)
+- [x] ![B](images/Q1-B.jpg)
 - [ ] ![C](images/Q1-C.jpg)
 - [ ] ![D](images/Q1-D.jpg)
+
+[Sample](https://jsfiddle.net/mrvahid/zohd8k2n/)
 
 #### Q2. Variables declared with the let keyword have what type of scope?
 
@@ -85,12 +86,12 @@ let fruit = 'apple';
 
 #### Q10. What is the `<label>` element used for?
 
-- [ ] to identify the difference parts of a figure
+- [ ] to identify the different parts of a figure
 - [x] to explain what needs to be entered into a form field
 - [ ] as a caption for images
 - [ ] as a heading for tables
 
-#### Q11. The browser finds some CSS that it does not understand. What is likely happen?
+#### Q11. The browser finds some CSS that it does not understand. What is likely to happen?
 
 - [ ] The page will not display
 - [ ] An error message will be displayed
@@ -134,18 +135,18 @@ h1 {
 #### Q15. You have used `display: none` in your stylesheet. Which users will be able to see or hear this content?
 
 - [ ] all users
-- [ ] users who can see the content on screen
+- [ ] users who can see the content on the screen
 - [x] no users
 - [ ] screen reader users
 
-#### Q16. Which choice is not part of CSS box model
+#### Q16. Which choice is not part of CSS box model?
 
 - [ ] margin
 - [ ] border
 - [ ] padding
 - [x] paragraph
 
-#### Q17. Which part of the URL `https://app.uniswap.org/pool` specifies the domain name
+#### Q17. Which part of the URL `https://app.uniswap.org/pool` specifies the domain name?
 
 - [ ] https
 - [ ] org
@@ -158,6 +159,8 @@ h1 {
 - [x] `<ul>`
 - [ ] `<main>`
 - [ ] `<nav>`
+
+[Source: ARIA landmarks in HTML5](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/HTML5.html)
 
 #### Q19. Which statement is true when an HTML tag has been deprecated?
 
@@ -173,7 +176,9 @@ h1 {
 - [ ] Font sizes are relative to the base font size of the operating system.
 - [x] Font sizes are relative to the root em unit used in the HTML element.
 
-#### Q21. Which HTML element represents either a scalar value within a known range a fractional value?
+[Source: CSS units](https://www.w3schools.com/cssref/css_units.asp)
+
+#### Q21. Which HTML element represents either a scalar value within a known range OR a fractional value?
 
 - [x] `<meter>`
 - [ ] `<range>`
@@ -184,7 +189,7 @@ h1 {
 
 - [ ] sharing JavaScript code with other people
 - [ ] making JavaScript-reliant sites accessible to users who do not have JavaScript turned on
-- [x] bundling individual JavaScript files for use in your website
+- [x] bundling individual JavaScript files for use on your website
 - [ ] source control
 
 #### Q23. How many columns will there be, given this code?
@@ -203,8 +208,6 @@ h1 {
 - [x] two
 
 #### Q24. Which style will change the color of the text?
-
-![A](images/Q24.png)
 
 ```html
 <cite>Noam Chomsky</cite>
@@ -264,14 +267,14 @@ cite {
 - [x] `galaxies = ["Milky Way", "Whirlpool", "Andromeda"];`
 - [ ] `var galaxies = {"Milky Way", "Whirlpool", "Andromeda"};`
 
-#### Q27. Which description correctly describes the initial values of flex items if the only thing you have done is apply `display: flex` to their parent?
+#### Q27. Which description correctly describes the initial values of flex items if you have applied `display: flex` to their parent?
 
 - [x] Items display in a row, lined up at the start, and do not stretch to fill the container
 - [ ] Items display in a column, lined up at the start, and do not stretch to fill the container
 - [ ] Items stay in a column until you add some flex properties.
-- [ ] Items display in a row, lined up at the start, and stretch to fill the container
+- [ ] Items displayed in a row, lined up at the start and stretched to fill the container
 
-#### Q28. Which line of code, if applied to all flex items in a flex container, would cause each flex item to take up an equal share of the total width of the container? For example, if there are four items, they would get 25% of each/
+#### Q28. Which line of code, if applied to all flex items in a flex container, would cause each flex item to take up an equal share of the total width of the container? For example, if there are four items, they would get 25% of each.
 
 - [ ] `flex: 1 0 0;`
 - [ ] `flex: initial;`
@@ -280,31 +283,33 @@ cite {
 
 #### Q29. A video on your webpage does not display and the console shows an error about mixed content. What is happening?
 
-- [ ] The webapge is using a DOCTYPE, which renders it incapable of displayed video in addition to other web content.
+- [ ] The webpage is using a DOCTYPE, which renders it incapable of displayed video in addition to other web content.
 - [ ] Your browser does not support HTML5 video.
 - [ ] The video is from a source that cannot be displayed in your location for legal reasons.
 - [x] The page is loaded via HTTPS, but the video is being served insecurely as HTTP and the browser is blocking it.
 
 #### Q30. What will this loop print?
 
-          let max = 3;
-          for (i = 0; i > max; i++) {
-            document.write("skrt ");
-          }
+```
+let max = 3;
+for (i = 0; i > max; i++) {
+  document.write("skrt ");
+}
+```
 
 - [ ] skrt skrt skrt
 - [ ] skrt skrt
 - [ ] skrt skrt skrt skrt
 - [x] nothing
 
-#### Q31. You have placed an image in a directory named images and want to reference it from a page located in the root of your site. Which choice would correctly display the image on the page?
+#### Q31. You have placed an image in a directory named images and want to reference it from a page located at the root of your site. Which choice would correctly display the image on the page?
 
-- [ ] < img src="image.jpg">
-- [ ] < a href="images/image.jpg"></a>
-- [x] < img src="images/image.jpg">
-- [ ] < img href="image.jpg">
+- [ ] `<img src="image.jpg">`
+- [ ] `<a href="images/image.jpg"></a>`
+- [x] `<img src="images/image.jpg">`
+- [ ] `<img href="image.jpg">`
 
-#### Q32. Which choice is a correct use of the parseInt() function in Javascript that parses a string and return an integer?
+#### Q32. Which choice is a correct use of the parseInt() function in Javascript that parses a string and returns an integer?
 
 - [ ] parseInt("six");
 - [ ] parse_int('6');
@@ -313,10 +318,10 @@ cite {
 
 #### Q33. How can you rewrite this function using arrow function syntax?
 
-- [ ] let product => (x,y) { <br /> x \* y; <br />}
-- [x] let product = (x,y) => x\*y;
-- [ ] let product => x\*y;
-- [ ] let product = (x,y) -> x\*y;
+- [ ] `let product => (x,y) { <br /> x \* y; <br />}`
+- [x] `let product = (x,y) => x\*y;`
+- [ ] `let product => x\*y;`
+- [ ] `let product = (x,y) -> x\*y;`
 
 #### Q34. Lighthouse is a tool for auditing your website. Which choice is not a category of report offered by Lighthouse?
 
@@ -342,16 +347,16 @@ const user = {
 
 #### Q36. A webpage has `rel="preconnect"` added to a link resource. What will this do?
 
-```
-<link rel="preconnect" href="https://example.com">
+```html
+<link rel="preconnect" href="https://example.com" />
 ```
 
 - [ ] It will tell the browser that this link is a site belonging to the current domain.
-- [ ] It will do nothing a because this is a deprecated attribute that browsers do not support.
+- [ ] It will do nothing because this is a deprecated attribute that browsers do not support.
 - [x] It will tell the browser that a connection will be made to another origin and to start getting ready as soon as possible.
 - [ ] It will tell the browser that a resource is needed, and that it should start getting fetched as soon as possible.
 
-[Reference (web.dev)](https://web.dev/preconnect-and-dns-prefetch/)
+[Source: web.dev](https://web.dev/preconnect-and-dns-prefetch/)
 
 #### Q37. Which choice is _not_ a render blocking resource?
 
@@ -360,7 +365,7 @@ const user = {
 - [ ] CSS
 - [ ] JavaScript
 
-[Reference (blog.logrocket)](https://blog.logrocket.com/5-tricks-to-eliminate-render-blocking-resources/)
+[blog.logrocket](https://blog.logrocket.com/5-tricks-to-eliminate-render-blocking-resources/)
 
 #### Q38. Which choice does _not_ provide information on browser support for a particular CSS property?
 
@@ -369,7 +374,7 @@ const user = {
 - [ ] the CSS specification
 - [ ] MDN property pages
 
-[Web platform tests site](https://web-platform-tests.org/)
+[Source: Web platform tests site](https://web-platform-tests.org/)
 
 #### Q39. You have a set of images that are slightly different sizes and aspect ratios. You don't mind if you crop off some of the image, but you want each image to completely fill a square box without being distorted. Which property and value would achieve this?
 
@@ -385,14 +390,14 @@ const user = {
 - [x] all \<a> tags whose href attribute ends with "org"
 - [ ] all \<a> tags whose href attribute contains "org"
 
-#### Q41. Which choice <em>is not</em> of invoking strict mode in JavaScript?
+#### Q41. Which choice <em>is not a result</em> of invoking strict mode in JavaScript?
 
-- [ ] it eliminates some JavaScript silent errors by changing them to throw errors.
-- [ ] it prohibits some syntax likely to be defined in future versions of ECMAScript.
-- [x] it forces the writing of valid HTML and CSS.
-- [ ] it fixes mistakes that make it difficult for JavaScript engines to perform optimizations.
+- [ ] It eliminates some JavaScript silent errors by changing them to throw errors.
+- [ ] It prohibits some syntax likely to be defined in future versions of ECMAScript.
+- [x] It forces the writing of valid HTML and CSS.
+- [ ] It fixes mistakes that make it difficult for JavaScript engines to perform optimizations.
 
-[MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+[Source: MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 
 #### Q42. In normal flow, some elements display as block elements default and others inline. which choice contains only block-level by default elements?\*\*
 
@@ -428,7 +433,7 @@ console.log(currencies);
 - [ ] `<input type="radio" value="vanilla" selected>`
 - [ ] `<input type="radio" value="vanilla" on>`
 
-#### Q45. **\_** moves an element completely out of the page's normal layout flow, like it is sitting on its own separate layer. From there, you can fix it in a position relative to the edges of the page's `<html>` element (or its nearest positioned ancestor element)?
+#### Q45. **\_** moves an element completely out of the page's normal layout flow like it is sitting on its own separate layer. From there, you can fix it in a position relative to the edges of the page's `<html>` element (or its nearest positioned ancestor element).
 
 - [ ] Sticky positioning
 - [x] Absolute positioning
@@ -466,7 +471,7 @@ console.log(currencies);
 [Source: W3Schools](https://www.w3schools.com/css/css_float_clear.asp)
 
 **clear: left;**
-`When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property. When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.`
+`When we use the float property, and we want the next element below (not on the right or left), we will have to use the clear property. When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.`
 
 #### Q49. You want to create striped table rows using CSS without adding a class to any element. Which CSS would correctly apply the background color to every odd row in your table?
 
@@ -491,22 +496,22 @@ console.log(currencies);
 `<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="style.css"></noscript>`
 
 - [x] The CSS is being loaded asynchronously in order to prevent render blocking.
-- [ ] This will stop the CSS being loaded for old browsers that do not support the techniques in use.
+- [ ] This will stop the CSS from being loaded for old browsers that do not support the techniques in use.
 - [ ] This is part of a stylesheet-switching script to load different themes for the site.
-- [ ] This will stop the CCS being loaded on slow data connections.
+- [ ] This will stop the CCS from being loaded on slow data connections.
 
 [Source: StackOverflow](https://stackoverflow.com/a/46750893)
 
 #### Q52. The flex property is often applied to flex items with a value of 1. Using flex: 1 is a shorthand - what does it unpack to?
 
 - [ ] flex: 0 0 100;
-- [x] flex: 1 0 0;
+- [ ] flex: 1 0 0;
 - [ ] flex: 0 0 auto;
-- [ ] flex: 1 1 auto;
+- [x] flex: 1 1 auto;
 
 [Source: stackoverflow](https://stackoverflow.com/questions/37386244/what-does-flex-1-mean)
 
-#### Q53. What does the term "tree shaking" mean with regard to JavaScript performance?
+#### Q53. What is the meaning of "tree shaking" in relation to JavaScript performance?
 
 - [ ] only using code that is supported by the newest browsers, and serving the site without JavaScript to old browsers
 - [x] removing unused code from the JavaScript files
@@ -529,11 +534,11 @@ console.log(currencies);
 - [ ] The visitor's browser does not have full support for CSS Grid Layout.
 - [x] Items have been positioned in such a way that they are in a different order to the source.
 - [ ] The browser has a keyboard navigation bug.
-- [ ] You need to add the tabindex attribute to elements.
+- [ ] You need to add the tabindex attribute to elements.?
 
 [Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility)
 
-#### Q56. What is the definition of the phrase “Time to Interactive”?
+#### Q56. What is the definition of the phrase "Time to Interactive"?
 
 - [ ] when the browser displays the first bit of content from the DOM
 - [x] when the user can consistently interact with all of the page elements
@@ -564,7 +569,300 @@ console.log(currencies);
 
 - [x] It is a piece of code that provides modern functionality in browsers that do not support it.
 - [ ] It is a piece of code that hides broken content from old browsers.
-- [ ] It is a term for languages such as Saas that compliles to CSS.
+- [ ] It is a term for languages such as Saas that compile to CSS.
 - [ ] It is a script that runs to add vendor prefixes to modern CSS.
 
 [Source: Polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)
+
+#### Q60. Which choice is _not_ a JavaScript framework?
+
+- [ ] Angular
+- [x] Laravel
+- [ ] Vue
+- [ ] React
+
+[Source: Laravel](https://laravel.com/)
+
+#### Q61. What does setting `aria-live=polite` on a live region achieve?
+
+- [ ] The screen reader will not notify the user of changes to live regions.
+- [x] The screen reader will wait until there is a pause to announce changes.
+- [ ] The screen reader will announce all changes immediately.
+- [ ] The screen reader will use a polite voice when announcing changes.
+
+[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live)
+
+#### Q62. Review the CSS below. What color would you expect the background color of the element with a class of .box to be?
+
+```css
+.box {
+  background-color: blue;
+  background: url(images/star.png?raw=png) no-repeat left top;
+}
+```
+
+- [ ] black
+- [ ] blue
+- [x] transparent
+- [ ] white
+
+#### Q63. Which CSS property and value would correctly remove the bullets from a list item?
+
+- [ ] `list-tem: none`
+- [ ] `bullets: hidden`
+- [x] `list-style-type: none`
+- [ ] `list-bullet: none`
+
+#### Q64. Which code example would center `.box` inside `.container`?
+
+```html
+<div class="container">
+  <div class="box">what a lovely box, very centered</div>
+</div>
+```
+
+- [ ] A
+
+```css
+.container {
+  display: flex;
+  align-items: center;
+}
+```
+
+- [x] B
+
+```css
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+```
+
+- [ ] C
+
+```css
+.box {
+  align-items: center;
+  justify-content: center;
+}
+```
+
+- [ ] D
+
+```css
+.container {
+  display: flex;
+  align: center;
+}
+```
+
+#### Q65. CSS Logical Properties and Values now have wide-ranging support in browsers. If you wanted to use the logical version of `width`, which property name would you choose?
+
+- [ ] `block-width`
+- [x] `inline-size`
+- [ ] `inline-width`
+- [ ] `block-size`
+
+[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Sizing)
+
+#### Q66. Which color value will create a background color that is semitransparent?
+
+- [ ] `rgb(18, 138, 125)`
+- [ ] `#128a7d`
+- [x] `rgba(18, 138, 125,.5)`
+- [ ] `hsl(174, 77%, 31%)`
+
+#### Q67. In a grid layout, which property will create gaps between the rows in the grid?
+
+- [x] `row-gap`
+- [ ] `rowgap`
+- [ ] `gutter`
+- [ ] `row-gutter`
+
+#### Q68. You are creating a responsive design, but when you view your site on a smaller screen, you notice that images are causing a horizontal scroll bar. How can you solve this problem without stretching any images out of shape?
+
+- [ ] Set `object-fit: contain` on the images.
+- [x] Set `max-width: 100%` on the images.
+- [ ] Set `width: 100%` on the images.
+- [ ] Set `resize: true` on the images.
+
+#### Q69. The CSS box model describes how the parts of a CSS box fit together and the size of the box. What is the actual width of the following box's visible part under the standard box model?
+
+```css
+box {
+  width: 200px;
+  padding: 10px;
+  margin: 0 15px;
+  border: 2px 5px;
+}
+```
+
+- [ ] 230px
+- [x] 220px
+- [ ] 200px
+- [ ] 260px
+
+#### Q70. How would you round the value 11.354 to the nearest full integer?
+
+- [ ] round(11.354);
+- [x] Math.round(11.354);
+- [ ] Math.rnd(11.354);
+- [ ] Maths.round(11.354);
+
+#### Q70. What is the JavaScript compiler Babel used for?
+
+- [x] converts ECMAScript 2015+ code into backward compatible version of JS to support older browsers
+- [ ] used to bundle individual JS files for use in your website
+- [ ] convert older JS code into modern ECMAScript 2015+ code
+- [ ] it is a SSR library that can enhance SEO and accessibility of your site
+
+#### Q71. What is the correct way to link to an external stylesheet from the head of an HTML document?
+
+- [x] `<link rel="stylesheet" href="styles.css">`
+- [ ] `<script type="text/css" href="styles.css"></script>`
+- [ ] `<script type="text/css" src="styles.css">`
+- [ ] `<link rel="css" href="styles.css">`
+
+#### Q72. Which href attribute creates a link to the telephone number 1-(704) 555-1151?
+
+- [x] href = "tel:+17045551151"
+- [ ] href="17045551151"
+- [ ] href="phone:+1704551151"
+- [ ] href="call:+17045551151"
+
+#### Q73. In the color value hsl(38, 90%, 60%), what does 38 represent?
+
+- [x] the tint of the color matching 38 degrade on the color wheel
+- [ ] the opacity of the color indicating 38% of fully opacity
+- [ ] the brightness of the color matching a brightness of 38%
+- [ ] the intensity of the color matching an intensity of 38%
+
+[Source: W3 Schools](<[https://www.w3schools.com/accessibility/accessibility_skip_links.php](https://www.w3schools.com/colors/colors_hsl.asp)>)
+
+#### Q74. What is a skiplink?
+
+- [ ] a replacement for inaccessible navigation
+- [ ] a method of allowing a screen-reader user to skip between headings
+- [x] a link placed early in the <body> to allow the user to skip to the main content
+- [ ] a link to allow users to skip video that automatically plays on a website
+
+[Source: W3 Schools](https://www.w3schools.com/accessibility/accessibility_skip_links.php)
+
+#### Q75. On a page with many images, what would be the effect of adding loading="lazy" to the <img> tag?
+
+- [ ] It will speed up the loading of the image when used with a JavaScript library
+- [ ] In supporting browsers, images will be highly compressed, therefore loading more quickly
+- [x] In supporting browsers, images will load only when they are in or near the visible viewport
+- [ ] In supporting browsers, images will not load unless the user explicitly requests image loading
+
+#### Q76. What is GraphQL?
+
+- [ ] a React library for storing data
+- [ ] a Vue.js library for storing and manipulating data
+- [x] a query language for fetching data from APIs
+- [ ] a new database format designed to replace MySQL
+
+[Source: GraphQL official website](https://graphql.org/)
+
+#### Q77. Which choice will place a multiline text input field on the page?
+
+- [ ] `<multiline></multiline>`
+- [x] `<textarea></textarea>`
+- [ ] `<input type="multiline">`
+- [ ] `<input type="textarea">`
+
+#### Q78. Which browser is not based on Chromium?
+
+- [x] Firefox
+- [ ] Opera
+- [ ] Chrome
+- [ ] Edge
+
+#### Q79. In supporting browsers, what would be the effect of using font-display: swap, as in the example?
+
+```css
+@font-face {
+  font-family: Helvetica;
+  font-display: swap;
+}
+```
+
+- [ ] The browser will show no content until the web font loads.
+- [ ] The browser will ignore the web font.
+- [ ] The browser will ignore the web font in a situation where the user has indicated they are saving data.
+- [x] The browser will load a system font while waiting for the web font to load.
+
+#### Q80. What does the term "code splitting" mean with regard to JavasScript performance?
+
+- [ ] allowing the browser to ignore code that it believes will perform badly
+- [x] splitting code into various bundles so that decisions can be made on loading priority
+- [ ] removing unused code from JavaScript files
+- [ ] only using code that is supported by the newest browsers, and serving the site without JavaScript to old browsers
+
+#### Q81. The vertical-align property works only on certain elements, or on those that have a certain CSS applied. Which element by default will allow vertical-align to be used?
+
+- [ ] div
+- [x] td
+- [ ] figure
+- [ ] p
+
+#### Q82. Which attribute is used to add text to an image that will be displayed if the image does not load and read out to screen reader users?
+
+- [ ] title
+- [ ] data
+- [ ] src
+- [x] alt
+
+#### Q83.Which pseudo-class allows you to selectively show a focus ring on elements only if keyboard navigation is detected?
+
+- [ ] focus-show
+- [x] :focus-visible
+- [ ] :focus-ring
+- [ ] focus-keyboard
+
+[Reference](https://www.freecodecamp.org/news/focus-rings-for-keyboard-interactions-only/)
+
+#### Q84. To create a collection of radio buttons associated with the same field, each <input> tag must \_\_\_\_.
+
+- [ ] have the same value as the id attribute
+- [x] have the same value of the name attribute
+- [ ] belong to the same field set
+- [ ] have the same value as the class attribute
+
+#### Q85. Which statement about HTML syntax is _false_?
+
+- [x] The value of a class attribute should be unique in an HTML document.
+- [ ] The `<img>` element does not have a closing `</img>` tag.
+- [ ] The `<h1>` element is the most important heading on the page.
+- [ ] The value of an id attribute should be unique in an HTML document.
+
+#### Q86. Which command has no Syntax error in CSS?
+
+- [ ] `p {font-size: 16em;}`
+- [ ] `h2 {colour: yellow;}`
+- [ ] `div {border-radius: 5px}`
+- [x] `#my-div {background-color: blue;}`
+
+#### Q87. What type of CSS is the following snippet?
+
+```
+<h1 style="color:blue;">
+  A Blue Heading
+</h1>
+```
+
+- [x] Inline
+- [ ] Internal
+- [ ] External
+- [ ] None of the above
+
+#### Q88. How would you set the value of a property—in this example,—back to the default value, as listed in the specification?
+
+- [x] color: initial
+- [ ] color: default
+- [ ] color: reset
+- [ ] color: inherit
+
+[Reference: W3 Schools](https://www.w3schools.com/cssref/css_initial.php#:~:text=The%20initial%20keyword%20is%20used,property%20to%20its%20default%20value.)

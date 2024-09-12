@@ -27,7 +27,7 @@
 
 #### Q4. Which action closes a path when you are actively drawing with the Pen tool?
 
-- [ ] clicking or dragging the first point in the path
+- [x] clicking or dragging the first point in the path
 - [ ] choosing Object > Path > Join
 - [ ] pressing Return (Mac) or Enter (Windows)
 - [ ] switching to a different tool
@@ -37,7 +37,7 @@
 `A map of California has a light beige main color and a small dark shadow.`
 
 - [ ] 3D Extrude & Bevel
-- [ ] Offset Path
+- [x] Offset Path
 - [ ] 3D Rotate
 - [ ] 3D Revolve
 
@@ -53,13 +53,13 @@
 `A map of Southern California includes many info circles shaded in light blue.`
 
 - [ ] Recolor Artwork
-- [ ] Select > Same > Appearance
+- [x] Select > Same > Appearance
 - [ ] Edit Colors
 - [ ] Live Paint
 
 #### Q8. How can you reverse the direction of all the arrows on the spiral in the image below?
 
-`A red lines spirals clockwise in, towards the center. Arrows along the line point in that direction.`
+`A red line spirals clockwise in, towards the center. Arrows along the line point in that direction.`
 
 - [x] Select Object > Path > Reverse Path Direction.
 - [ ] Select Effect > 3D > Rotate.
@@ -80,7 +80,7 @@
 - [ ] when you want to cut an object at existing anchor points
 - [ ] when you want to cut an object into equal pieces
 - [ ] when you want to crop an embedded or linked image
-- [x] when you want to quickly divide an object by drawing closed, freehand paths
+- [x] When you want to quickly divide an object by drawing closed, freehand paths
 
 #### Q11. You have a full-color RGB document and you need to create a grayscale version that will print only on the black plate. How can you accomplish this?
 
@@ -93,7 +93,7 @@
 
 - [ ] Switch to any other workspace, and then switch back to Essentials.
 - [ ] Quit Illustrator, press and hold Command+Shift+Option (Mac) or Ctrl+Shift+Alt (Windows), and relaunch Illustrator.
-- [x] Choose Reset Essentials from the Workspace menu or the workspace switcher.
+- [x] Choose Reset Essentials from the Workspace menu or the Workspace switcher.
 - [ ] Quit and relaunch Illustrator.
 
 #### Q13. Your boss likes the new logo you've designed but would like to see some variations using different color schemes. Which feature could you use to generate these variations quickly?
@@ -107,7 +107,7 @@
 
 - [ ] Specify a key object, then use the Horizontal Distribute Space command in the Align panel with a Spacing value of 0
 - [ ] Turn on Smart Guides and drag each object until it snaps to the one next to it.
-- [ ] Choose the Move command and in the dialog box set the Distance value to 0.
+- [x] Choose the Move command and in the dialog box set the Distance value to 0.
 - [ ] Select the objects with the Selection tool, then drag from the side of the selection bounding box until the objects snap together.
 
 #### Q15. You select a new color in the Color Picker and want to see several variations in different shades and tints. Which feature allows you to do this?
@@ -133,7 +133,7 @@
 
 #### Q18. How can you ensure that proper nouns are not hyphenated in the document you're working on?
 
-- [ ] Turn off Hyphenate Capitalized Words in the Paragraph panel.
+- [x] Turn off Hyphenate Capitalized Words in the Paragraph panel.
 - [ ] Select Justify All Lines in the Paragraph panel.
 - [ ] Decrease the Word Spacing in the justification options.
 - [ ] Increase the Hyphenation Zone value in the Paragraph panel so it is greater than the point size of the text.
@@ -150,7 +150,7 @@
 - [ ] the Smooth tool
 - [ ] the Shape Builder tool
 - [ ] the Pencil tool
-- [ ] the Shaper tool
+- [x] the Shaper tool
 
 #### Q21. When using the Live Paint Bucket tool to fill artwork with colors, you are unable to fill some areas due to the size of gaps between paths. What can you do in the Gap Options dialog box to fix this problem?
 
@@ -170,7 +170,7 @@
 
 ![Overlapping circles](images/009.png?raw=true)
 
-- [ ] The paths do not have a fill attribute.
+- [x] The paths do not have a fill attribute.
 - [ ] Only one of the paths is selected, but both need to be selected.
 - [ ] One of the paths is selected but the Join tool works only with unselected paths.
 - [ ] Endpoints need to be selected in both paths before they can be trimmed and joined.
@@ -207,7 +207,7 @@
 - [x] Make Compound Path
 - [ ] Make Clipping Mask
 
-#### Q28. The Symbol Sprayer tool has been used to apply a number of symbol instances to an illustration. You would like to modify the appearance of some instances using graphic styles. How would this be achieved?
+#### Q28. The Symbol Sprayer tool has been used to apply several symbol instances to an illustration. You would like to modify the appearance of some instances using graphic styles. How would this be achieved?
 
 - [ ] Select instances with the Group Selection tool and then choose the desired graphic style.
 - [ ] Symbol instances in a symbol set cannot be overridden.
@@ -251,23 +251,23 @@
 - [ ] With nothing selected, click the More Tools button in the Properties panel.
 - [ ] Click the ellipsis at the bottom of the toolbar.
 - [ ] Turn on the tool in the preferences.
-- [ ] In the Window menu, click Window > Tools.
+- [x] In the Window menu, click Window > Tools.
 
 #### Q34. The four flowers shown in the image below were created by applying an art brush to paths of different lengths. How can you prevent the distortion seen in flowers 2, 3, and 4 while keeping the size of the leaves and the width of the stem the same in all the flowers?
 
 - [ ] Open the Art Brush Options dialog box and select Scale Proportionally.
-- [ ] Expand the appearance of the distorted flowers and drag the flowers with the Selection tool.
+- [x] Expand the appearance of the distorted flowers and drag the flowers with the Selection tool.
 - [ ] Use the Pen tool to add points at the top and bottom of the stem, and then drag the points with the Direct Selection tool to remove the distortion.
 - [ ] Open the Art Brush Options dialog box, select Stretch Between Guides, and then place the guides so only the stem is between them.
 
 #### Q35. When printing an image with many out-of-gamut colors, which rendering intent would you choose to best preserve the visual relationship between colors—not the specific color values?
 
 - [ ] Absolute Colorimetric
-- [ ] Perceptual
+- [x] Perceptual
 - [ ] Saturation
 - [ ] Relative Colorimetric
 
-#### Q36. Why would you use change the Expand Mesh value when using the Puppet Warp tool?
+#### Q36. Why would you change the Expand Mesh value when using the Puppet Warp tool?
 
 - [ ] It allows you to work faster because modifying a larger mesh requires fewer calculations.
 - [ ] It allows you to modify disjointed objects together
@@ -336,7 +336,7 @@
 
 #### Q45. Why would you turn on the Ignore Artboards option in the Print dialog box?
 
-- [ ] to prevent Illustrator from printing marks showing the borders of artboards
+- [ ] to prevent Illustrator from printing marks showing the borders of the artboard
 - [x] to print all artboards on one piece of paper
 - [ ] to prevent Illustrator from printing the names of artboards
 - [ ] to scale each artboard to the media size
@@ -353,9 +353,9 @@
 - [ ] to allow portions of the symbol to be exported as separate graphics
 - [ ] to ensure that each instance of the symbol always maintains its original proportions when scaled
 - [ ] to include custom guides with the symbol so each instance is placed in the same position relative to the artboard
-- [ ] to allow instances of the symbol to be scaled without distorting the corners
+- [x] to allow instances of the symbol to be scaled without distorting the corners
 
-#### Q48. What can you do in order to edit text in just one placed instance of a symbol?
+#### Q48. What can you do to edit the text in just one placed instance of a symbol?
 
 - [ ] Click the Edit Symbol button in the Control panel or Properties panel.
 - [ ] Edit the symbol instance name.
@@ -371,7 +371,7 @@
 
 #### Q50. You have drawn objects on planes using the perspective grid, but now want to change the angles of the grid to new vanishing points and have the artwork update automatically. What option should be enabled to achieve this result?
 
-- [ ] Enable Perspective Warp.
+- [x] Enable Perspective Warp.
 - [ ] Enable Viewing Angle in the Define Grid dialog box.
 - [ ] Choose View > Perspective Grid > Lock Station Point
 - [ ] Enable 3D Transform.
@@ -399,14 +399,14 @@
 - [x] Direct Selection Tool
 - [ ] Anchor Adjustment Tool
 
-#### Q54. Which of the following correctly defines the method by which Adobe Illustrator creates images.
+#### Q54. Which of the following correctly defines the method by which Adobe Illustrator creates images?
 
 - [ ] Raster
 - [ ] Encryption
 - [ ] Extrapolation
 - [x] Vector
 
-#### Q55. Adobe Illustrator terminology for drawn line is `___`
+#### Q55. Adobe Illustrator terminology for drawn lines is `___`
 
 - [ ] Line
 - [ ] Gamma Line
@@ -420,7 +420,7 @@
 - [ ] Hyphenation
 - [ ] Format
 
-#### Q57. Which of the following tools will cut a path into two different paths.
+#### Q57. Which of the following tools will cut a path into two different paths?
 
 - [x] scissors tool
 - [ ] knife tool
@@ -462,21 +462,21 @@
 - [ ] Until the software is shut down
 - [x] Until another tool is selected
 
-#### Q63. In Adobe illustrator we create our design and Illustrator on `___`
+#### Q63. In Adobe Illustrator we create our design and Illustrator on `___`
 
 - [ ] Pages
 - [ ] Canvas
 - [ ] Cardboard
 - [x] Artboard
 
-#### Q64. How many types of pages orientation is in Adobe Illustrator?
+#### Q64. How many types of page orientation are in Adobe Illustrator?
 
 - [ ] 1
 - [x] 2
 - [ ] 3
 - [ ] 4
 
-#### Q65. Shortcut of Selection tool in Adobe Illustrator is `___`
+#### Q65. The shortcut of the Selection tool in Adobe Illustrator is `___`
 
 - [ ] A
 - [x] V
@@ -502,7 +502,7 @@
 #### Q68. Which statement is true about working in Isolation mode?
 
 - [ ] You can print and export individual objects by isolating them first.
-- [ ] All non-isolated objects cannot be selected or edited.
+- [x] All non-isolated objects cannot be selected or edited.
 - [ ] You cannot isolate more than one object at a time.
 - [ ] You can Shift-click non-isolated objects to make them editable.
 
@@ -510,7 +510,7 @@
 
 - [ ] Preserve Paths
 - [ ] Create PDF Compatible File
-- [ ] Include Linked Files
+- [x] Include Linked Files
 - [ ] Use Compression
 
 #### Q70. Drop shadows in a printed document appear pixelated. Which feature can you use to fix this?
@@ -541,8 +541,7 @@
 - [x] Turn off the **Print** option for the layer.
 - [ ] Lock the layer.
 
-**Explanation:**
-From Adobe Help Center: [Make artwork nonprintable](https://helpx.adobe.com/illustrator/using/setting-documents-printing.html)
+[Make artwork nonprintable](https://helpx.adobe.com/illustrator/using/setting-documents-printing.html)
 
 #### Q74. If you had to send a file to a colleague, how could you collect everything needed to work on it, including any non-Adobe fonts and linked images?
 
@@ -551,24 +550,180 @@ From Adobe Help Center: [Make artwork nonprintable](https://helpx.adobe.com/illu
 - [x] Use the **Package** command.
 - [ ] Select **Select All** and then click the **Add Content** button in the **Libraries** panel.
 
-**Explanation:**
-From Adobe Help Center: [Share artwork](https://helpx.adobe.com/illustrator/how-to/sharing-basics.html)
+[Share artwork](https://helpx.adobe.com/illustrator/how-to/sharing-basics.html)
 
-#### Q75. When working with a two-point perspective grid, which setting in the **Define Perspective Grid** dialog box do you use to change the size of grid cells so you can draw and move objects with more precision?
+#### Q75. When working with a two-point perspective grid, which is set in the **Define Perspective Grid** dialog box do you use to change the size of grid cells so you can draw and move objects with more precision?
 
 - [ ] Scale
 - [ ] Viewing Distance
 - [ ] Viewing Angle
-- [ ] Gridling every
+- [x] Gridling every
 
 #### Q76. Which option do you use to create the stroke shown below?
 
-<img width="400" alt="011" src="https://user-images.githubusercontent.com/13102859/135642887-d7dc854e-0eab-42cc-922e-1f3c04ce55c3.png">
+![stroke](images/011.png?raw=true)
 
 - [ ] Round Join
 - [ ] Projecting Cap
 - [x] Round Cap
 - [ ] Align Stroke to Outside
 
-**Explanation:**
-From Youtube Channel: [How to Round End of Path (Line) in Illustrator](https://www.youtube.com/watch?v=UCQb-JTRIm4&t=92s)
+[How to Round End of Path (Line) in Illustrator](https://www.youtube.com/watch?v=UCQb-JTRIm4&t=92s)
+
+#### Q77. Where can you add arrowheads to a line or arc?
+
+- [ ] Effect > Path > Arrowheads.
+- [x] The Stroke panel.
+- [ ] The Arrow panel.
+- [ ] Object > Path > Arrowheads.
+
+#### Q78. By default, what happens when you create two overlapping brush strokes of the same color with the Blob Brush tool?
+
+- [x] The brush strokes are merged into one object.
+- [ ] The two strokes are averaged.
+- [ ] The first stroke is erased.
+- [ ] The two strokes become a compound shape.
+
+[Using the Blob Brush in Illustrator](https://creativepro.com/using-the-blob-brush-in-illustrator)
+[Difference Between Compound Paths and Compound Shapes](https://www.vektorgarten.de/illustrator-compound-path-shape.html)
+
+#### Q79. Which transform setting allows you to scale an object and its drop shadow at the same time?
+
+- [ ] Transform Both
+- [ ] Constrain Proportions
+- [ ] Uniform Scale
+- [x] Scale Strokes & Effects
+
+[Adobe Help: Scale, shear, and distort objects](https://helpx.adobe.com/illustrator/using/scaling-shearing-distorting-objects.html)
+
+#### Q80. To create a pattern brush with custom corners and/or custom endpoints, what must you create first?
+
+- [ ] a graphic style
+- [ ] a symbol
+- [x] a pattern swatch
+- [ ] a swatch group
+
+[How to Create a Pattern Brush in Adobe Illustrator](https://www.webucator.com/article/how-to-create-a-pattern-brush-in-adobe-illustrator)
+
+#### Q81. Which Paintbrush tool setting should you adjust if you want to create paths with fewer anchor points?
+
+- [x] Fidelity
+- [ ] Opacity
+- [ ] Limit
+- [ ] Stroke Weight
+
+[Adobe Help: Brushes documentation #Paintbrush tool options](https://helpx.adobe.com/illustrator/using/brushes.html)
+
+#### Q82. This image shows a variable data project file for a business card. Which properties of the Color_Blocks variable are dynamic?
+
+![Business card](images/012.jpg?raw=true)
+
+- [ ] position on the artboard
+- [ ] size
+- [ ] color
+- [x] visibility
+
+[Adobe Help: Data merge using the Variables panel](https://helpx.adobe.com/illustrator/using/data-driven-graphics-templates-variables.html)
+
+#### Q83. If you group objects that are on different layers, all of the objects will `___`.
+
+- [ ] be placed in a new sublayer of the topmost layer of the elected objects
+- [ ] be placed in a newly created layer above the other layers
+- [x] be placed on the topmost layer of the selected objects
+- [ ] remain on the current layers
+
+[Adobe Help: Group and expand objects](https://helpx.adobe.com/illustrator/using/grouping-expanding-objects.html)
+
+#### Q84. Using the Width tool, how could you make the stroke on the top path match the bottom one?
+
+![Two objects](images/013.jpg?raw=true)
+
+- [ ] Press and hold the Option (Mac) or Alt (Windows) key, and drag the selected width point to the left.
+- [x] Drag the selected width point left until it snaps to the same position as the adjacent width point.
+- [ ] Delete the selected width point.
+- [ ] Double-click the selected width point and set the **Total Width** value to **0**.
+
+[Using the Width Tool in Illustrator](https://creativepro.com/using-the-width-tool-in-illustrator/)
+
+#### Q85. Why should you use the Simplify command before exporting a web graphic to SVG format?
+
+- [x] to reduce the number of points that must be represented in the code
+- [ ] to remove invisible points and lines
+- [ ] to reduce the output resolution so it's appropriate for web graphics
+- [ ] to combine redundant objects
+
+[How to Optimize and Export SVGs in Adobe Illustrator](https://www.sitepoint.com/crash-course-optimizing-and-exporting-svgs-in-adobe-illustrator/)
+
+#### Q86. Using the Width tool, how do you change just one side of the stroke width?
+
+- [x] Select a width point, press and hold the Option (Mac) or Alt (Windows) key, and drag on it.
+- [ ] Select a width point and use the **Properties** panel to adjust the size of each side independently.
+- [ ] You cannot change just one side of the stroke width.
+- [ ] Select a width point, press and hold the Shift key, and drag on it.
+
+[Using the Width Tool in Illustrator](https://creativepro.com/using-the-width-tool-in-illustrator/)
+
+#### Q87. How can you change the pattern fill in this image so that the flowers overlap more with smaller gaps?
+
+!['Spring' Pattern Font](images/014.png?raw=true)
+
+- [ ] Use the **Overlap** buttons in the **Pattern Options** dialog box.
+- [ ] Select **Size Tile to Art** in the **Pattern Options** dialog box.
+- [x] Reduce the width and height in the **Pattern Options** dialog box.
+- [ ] Increase the number of copies of the flower used to make the pattern.
+
+[Adobe Help: Create and edit patterns](https://helpx.adobe.com/illustrator/using/create-edit-patterns.html)
+
+#### Q88. Using `___` can reduce file size and maintain consistency.
+
+- [ ] libraries
+- [ ] variables
+- [x] symbols
+- [ ] layers
+
+[9 ways to minimize file size in Illustrator](https://astutegraphics.com/learn/tutorial/9-ways-to-minimize-file-size-in-illustrator)
+
+#### Q89. You have access to the Creative Cloud library shown below, which was shared via the Collaborate feature library. For a particular document, you need to use the 10% Discount graphic but change the fill color to green. You're not allowed to change how this graphic appears for anyone else with access to the library. What must you do to accomplish this?
+
+![Sample library window](images/015.png?raw=true)
+
+- [ ] Right-click the graphic in the library and select **Place Linked**.
+- [ ] Drag the graphic into your document and use the **Properties** panel to change the fill.
+- [ ] Drag the graphic into your document and click the **Edit Original** button in the **Control** panel.
+- [x] Drag the graphic into your document while holding the Option (Mac) or Alt (Windows) key.
+
+[Adobe Help: Creative Cloud Libraries in Illustrator](https://helpx.adobe.com/illustrator/using/creative-cloud-libraries-sync-share-assets.html)
+
+#### Q90. Which statement is true when you crop a linked image?
+
+- [ ] You can adjust or remove the crop later on to show the entire linked image.
+- [x] A cropped copy of the image file is saved at the same location as the current document and is linked to the Illustrator file.
+- [ ] A warning appears telling you that pixels from the original image file will be permanently removed.
+- [ ] A cropped copy of the image file is saved on disk and linked to the Illustrator file.
+
+[How to crop and trim a photo in Adobe Illustrator](https://astutegraphics.com/learn/tutorial/how-to-crop-and-trim-a-photo-in-adobe-illustrator)
+
+#### Q91. What would you do to make the objects beneath the selected artwork visible inside the circle?
+
+![Rectangle with flower](images/016.png?raw=true)
+
+- [ ] Make a Live Paint group.
+- [ ] Make a clipping mask.
+- [x] Make a compound path.
+- [ ] Make a pattern.
+
+[Adobe Help: Combine objects](https://helpx.adobe.com/illustrator/using/combining-objects.html)
+
+#### Q92. what does the outline color of a selected path or bounding box indicate?
+
+- [ ] the layer containing the path
+- [ ] the current stroke profile
+- [ ] the artboard containing the path
+- [x] the current stroke color
+
+#### Q93. Fundamental transformation tools include all of the following except:
+
+- [ ] Scale
+- [ ] Rotate
+- [x] Invert
+- [ ] Reflect

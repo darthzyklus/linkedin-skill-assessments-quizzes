@@ -37,10 +37,10 @@
 
 #### Q6. Given a cursor named myCursor, which command returns a boolean value?
 
-- [x] myCursor.hasNext()
-- [ ] myCursor.sort()
-- [ ] myCursor.next()
-- [ ] myCursor.find()
+- [x] `myCursor.hasNext()`
+- [ ] `myCursor.sort()`
+- [ ] `myCursor.next()`
+- [ ] `myCursor.find()`
 
 #### Q7. Which command returns a specific document in the user's collection?
 
@@ -65,10 +65,10 @@
 
 #### Q10. In the MongoDB shell, how can you tell if an index was used with a query?
 
-- [x] db.customers.find({lastName: 'smith'}).explain()
-- [ ] db.customers.find({lastName: 'smith'}).perf()
-- [ ] db.customers.find({lastName: 'smith'}).plan()
-- [ ] db.customers.find({lastName: 'smith'}).usedIndex()
+- [x] `db.customers.find({lastName: 'smith'}).explain()`
+- [ ] `db.customers.find({lastName: 'smith'}).perf()`
+- [ ] `db.customers.find({lastName: 'smith'}).plan()`
+- [ ] `db.customers.find({lastName: 'smith'}).usedIndex()`
 
 #### Q11. Suppose your aggregation pipeline terminated with an exception referring to exceeded memory limit. What is the best way to resolve the issue?
 
@@ -79,10 +79,10 @@
 
 #### Q12. What is the recommended way to delete a user?
 
-- [ ] db.deleteUser("user")
-- [ ] db.removeUser("user") DEPRECATED
-- [ ] db.remove("user")
-- [x] db.dropUser("user")
+- [ ] `db.deleteUser("user")`
+- [ ] `db.removeUser("user") DEPRECATED`
+- [ ] `db.remove("user")`
+- [x] `db.dropUser("user")`
 
 #### Q13. What the primary database in a replica set fails, when does failover begin?
 
@@ -121,10 +121,10 @@
 
 #### Q18. You have a collection named restaurants with the geographical information stored in the location property, how do you create a geospatial index on it?
 
-- [x] `db.restaurants.CreateIndex({location: "2dsphere"})`
+- [x] `db.restaurants.createIndex({location: "2dsphere"})`
 - [ ] `db.restaurants.geospatial({location: "2dsphere"})`
-- [ ] `db.restaurants.CreateIndex("2dsphere":"location")`
-- [ ] `db.restaurants.CreateIndex({geospatial: "location"})`
+- [ ] `db.restaurants.createIndex("2dsphere":"location")`
+- [ ] `db.restaurants.createIndex({geospatial: "location"})`
 
 #### Q19. How do you find documents with a matching item in an embedded array?
 
@@ -165,8 +165,10 @@
 
 - [ ] Calculate interest quickly.
 - [ ] Accomplish nothing, since compound indexes aren't allowed in Mongo.
-- [ ] Use more than one field per index.
-- [x] Combine fields in different collations.
+- [x] Use more than one field per index.
+- [ ] Combine fields in different collations.
+
+[Reference](https://www.mongodb.com/docs/v6.0/core/index-compound/)
 
 #### Q25. Why are ad-hoc queries useful?
 
@@ -280,7 +282,7 @@
 - [ ] `db.vehicle.distinct("category").count()`
 - [x] `db.vehicle.distinct("category").length`
 
-Note: count() works with find(...) but length works with distinct
+**Note**: count() works with find(...) but length works with distinct
 
 #### Q41. From the MongoDB shell, how do you create a new document in the customers collection?
 
@@ -314,8 +316,10 @@ Note: count() works with find(...) but length works with distinct
 
 - [ ] restore
 - [ ] read/write
-- [x] dbadmin
-- [ ] delete collections
+- [ ] dbadmin
+- [x] delete collections
+
+[Reference](https://www.mongodb.com/docs/v6.0/reference/built-in-roles/#backup-and-restoration-roles)
 
 #### Q46. Which MongoDB shell command deletes a single document?
 
@@ -323,6 +327,12 @@ Note: count() works with find(...) but length works with distinct
 - [ ] `db.customers.drop({_id: 1});`
 - [ ] `db.drop.customers({_id: 1});`
 - [x] `db.customers.remove({_id: 1});`
+
+**Note:** db.collection.remove() is deprecated in the new mongosh. Use db.collection.deleteOne() or db.collection.deleteMany().
+
+References:
+[db.collection.remove()](https://www.mongodb.com/docs/v6.0/reference/method/db.collection.remove/)
+[db.collection.delete()](https://www.mongodb.com/docs/mongodb-shell/crud/delete/)
 
 #### Q47. Using the MongoDB shell, how do you remove the customer collection and its indexes?
 
@@ -333,8 +343,8 @@ Note: count() works with find(...) but length works with distinct
 
 #### Q48. By default, applications direct their read operations to which member of the replica set?
 
-- [ ] primary
-- [x] arbiter
+- [x] primary
+- [ ] arbiter
 - [ ] secondary
 - [ ] backup
 
@@ -345,12 +355,20 @@ Note: count() works with find(...) but length works with distinct
 - [ ] `db.people.getIndexKeys();`
 - [x] `db.people.getIndexes();`
 
+**Note:** An alternative method in the mongosh shell is listIndexes()
+
+[Reference](https://www.mongodb.com/docs/v6.0/reference/command/listIndexes/#mongodb-dbcommand-dbcmd.listIndexes)
+
 #### Q50. You are going to do a series of updates to multiple records. You find setting the multi option of the update() command too tiresome. What should you do instead?
 
 - [ ] Use the replaceMany() command instead
 - [ ] Use the updateMulti() command instead
 - [x] Use the updateMany() command instead
 - [ ] Set the global multi option to True
+
+**Note:** An alternative method for db is .update()
+
+[Reference](https://www.mongodb.com/docs/v6.0/reference/command/update/#mongodb-dbcommand-dbcmd.update)
 
 #### Q51. To cleanly shut down MongoDB, what command should you use from the MongoDB shell?
 
@@ -365,6 +383,10 @@ Note: count() works with find(...) but length works with distinct
 - [ ] `db.members.find({$match: {gender: "Female"}}, {$group: {_id: {city: "$city"}, number: {$sum: 1}}}.$sort ({number: -1})`
 - [ ] `db.members.find([ {$match: {gender: "Female"}}, {$group: {_id: {city: "$city"}, number: {$sum: 1}}}, {$sort :{number: -1}}])`
 - [ ] `db.members.aggregate([ {$match: {gender: "Female"}}, {$sort :{number: -1}}])`
+
+**Note:** If you want to analyze the performance of a query use .explain("executionStats")
+
+[Reference](https://www.mongodb.com/docs/v6.0/tutorial/analyze-query-plan/)
 
 #### Q53. When no parameters are passed to `explain()`, what mode does it run in?
 
@@ -383,7 +405,7 @@ Note: count() works with find(...) but length works with distinct
 #### Q55. Which file in the MongoDB directly holds the MongoDB daemon?
 
 - [ ] mongodb
-- [x] mongo-daemon
+- [ ] mongo-daemon
 - [ ] daemon
 - [x] mongod
 
@@ -396,10 +418,13 @@ Note: count() works with find(...) but length works with distinct
 
 #### Q57. What is the most accurate statement regarding MongoDB and ad hoc queries?
 
-- [x] MongoDB does not allow ad hoc queries; all queries require an index.
+- [ ] MongoDB does not allow ad hoc queries; all queries require an index.
 - [ ] Ad hoc queries are allowed only in the paid version.
 - [ ] Ad hoc queries are allowed only through the ad hoc command.
 - [x] MongoDB allows ad hoc queries.
+
+**Note:** You don't need an index to perform ad hoc queries. Only pick one choice
+[Reference](https://www.mongodb.com/docs/v6.3/query-api/)
 
 #### Q58. In MongoDB, what does a projection do?
 
@@ -425,16 +450,30 @@ Note: count() works with find(...) but length works with distinct
 #### Q61. How can you improve the appearance of the output JSON that contains the `_id`?
 
 - [ ] `Use db.collection.set({$_id:pretty})`
-- [ ] `Create a second index`
-- [x] `Use db.collection.format(numeric)`
+- [x] `Use db.collection.find().pretty()`
+- [ ] `Use db.collection.format(numeric)`
 - [ ] `Use $_id = value`
+
+[Reference:](https://www.mongodb.com/docs/manual/reference/method/cursor.pretty/)
 
 #### Q62. What happens to a Replica set oplog if it runs out of memory?
 
-- [x] `The oplog will be saved on one of the secondary servers.`
-- [ ] `The oplog is capped collection and can't run out of memory`
+- [ ] `The oplog will be saved on one of the secondary servers.`
+- [x] `The oplog is capped collection and can't run out of memory`
 - [ ] `The MongoDB instance will fail`
 - [ ] `The oplog will stop recording logging information`
+
+**Argument:**
+
+_Why "The oplog will be saved on one of the secondary servers." is wrong:_
+
+> MongoDB applies database operations on the primary and then records the operations on the primary's oplog. The secondary members then copy and apply these operations in an asynchronous process. All replica set members contain a copy of the oplog, in the local.oplog.rs collection, which allows them to maintain the current state of the database.
+
+_Reasoning behind the right answer:_
+
+> The oplog (operations log) is a special capped collection that keeps a rolling record of all operations that modify the data stored in your databases.
+
+> Unlike other capped collections, the oplog can grow past its configured size limit to avoid deleting the majority commit point.
 
 #### Q63. MongoDB ships with a variety of files. Which file runs the MongoDB shell?
 
@@ -442,6 +481,14 @@ Note: count() works with find(...) but length works with distinct
 - [ ] mongo-s
 - [ ] shell
 - [ ] mongo-shell
+
+**Note:** mongosh is the new mongo shell, mongo is deprecated.
+
+Starting in MongoDB v5.0,
+mongosh
+replaces mongo as the preferred shell.
+
+[Reference:] (https://www.mongodb.com/docs/mongodb-shell/)
 
 #### Q64. How can you view the execution performance statistics for a query?
 
@@ -452,24 +499,28 @@ Note: count() works with find(...) but length works with distinct
 
 #### Q65. From the MongoDB shell, how do you execute a JavaScript file named list.js?
 
-- [ ] node 'list.js'
-- [ ] exec('list.js)
-- [ ] run('list.js)
-- [x] load('list.js)
+- [ ] `node 'list.js'`
+- [ ] `exec('list.js)`
+- [ ] `run('list.js)`
+- [x] `load('list.js)`
 
 #### Q66. Which MongoDB shell query will sort the customer's collection by name descending?
 
-- [ ] db.customers.sort({name: -1}.find({})
-- [ ] db.customers.sort({name: -1})
-- [x] db.customers.find({}).sort({name: -1})
-- [ ] db.customers.find({}).sort({name: 1})
+- [ ] `db.customers.sort({name: -1}.find({})`
+- [ ] `db.customers.sort({name: -1})`
+- [x] `db.customers.find({}).sort({name: -1})`
+- [ ] `db.customers.find({}).sort({name: 1})`
 
-#### Q67. Suppose you are using the mongoimport command to import personnel data and there is a unique index on the email field. What happens when there are duplicate emails in the import?
+#### Q67. Suppose you are using the `mongoimport` command to import personnel data and there is a unique index on the email field. What happens when there are duplicate emails in the import?
 
 - [ ] The import command aborts without importing any records.
 - [ ] The import command imports records upto but not including the record, and then aborts.
-- [ ] The import command doesn't import the bad document but does import the rest.
-- [x] The import command prompts you to correct the bad record.
+- [x] The import command doesn't import the bad document but does import the rest.
+- [ ] The import command prompts you to correct the bad record.
+
+**Note:** By default, mongoimport continues an operation when it encounters duplicate key and document validation errors.
+
+[Reference](https://www.mongodb.com/docs/database-tools/mongoimport/#std-option-mongoimport.--stopOnError)
 
 #### Q68. You have a collection with millions of documents. Each time you attempt to sort. MongoDB runs out of memory. What might help?
 
@@ -480,10 +531,16 @@ Note: count() works with find(...) but length works with distinct
 
 #### Q69. You need to be able to quickly find a word in a text field. What should you do?
 
-- [ ] Create a text index on the field and do a $text Query.
-- [ ] Create an single field index in descending order, and do a query for the word.
-- [x] Do a $text query.
+- [x] Create a text index on the field and do a $text Query.
+- [ ] Create a single field index in descending order, and do a query for the word.
+- [ ] Do a $text query.
 - [ ] Create a $regex on the fields, and do a $regex query.
+
+Argument: You need a text index in order to perform a $text query on a field. $text query uses the text index under the hood
+
+References:
+[$text query](https://www.mongodb.com/docs/v6.0/reference/operator/query/text/#examples)
+[Text index](https://www.mongodb.com/docs/v6.0/core/index-text/)
 
 #### Q70. Which field is always included in a projection unless specifically excluded?
 
@@ -498,9 +555,12 @@ Note: count() works with find(...) but length works with distinct
 
 - [ ] Create a user account.
 - [ ] Register online.
-- [ ] Create a data directory.
-- [x] Establish security credentials.
-      Source: [mongodb site](https://docs.mongodb.com/manual/tutorial/verify-mongodb-packages/#verify-integrity-of-mongodb-packages)
+- [x] Create a data directory.
+- [ ] Establish security credentials.
+
+Note: The question in case is ambiguous. In the mongo docs, on the Windows Installation section, it clearly specifies the need for creating a data directory. However, that does not seem to be the case for Unix based systems. So, that gives use the closest possible solution for a specific platform. If we extrapolate that to the question, that seems to be the most reasonable solution.
+
+[mongodb site](https://docs.mongodb.com/manual/tutorial/verify-mongodb-packages/#verify-integrity-of-mongodb-packages)
 
 #### Q72. How does a --jsonArray file need to be structured?
 
@@ -508,27 +568,345 @@ Note: count() works with find(...) but length works with distinct
 - [ ] as YAML
 - [ ] as plain text
 - [ ] as a BSON object
-      Source: [Section blog](https://www.section.io/engineering-education/handling-json-in-mongodb/)
 
-### Q73. From the MongoDB shell, how do you display all of a database's memory usage?
+[Section blog](https://www.section.io/engineering-education/handling-json-in-mongodb/)
 
-- [ ] db.size()
-- [ ] db.info()
-- [ ] db.memory()
-- [ ] db.stats()
+#### Q73. From the MongoDB shell, how do you display all of a database's memory usage?
 
-### Q74. How do you create a new MongoDB user?
+- [ ] `db.size()`
+- [ ] `db.info()`
+- [ ] `db.memory()`
+- [x] `db.stats()`
 
-- [x] db.createUser({})
-- [ ] db.insert({user: 1})
-- [ ] db.customers.newUser({})
-- [ ] db.newUser({})
-      Reference: [MongoDB documentation](https://docs.mongodb.com/manual/tutorial/create-users/)
+#### Q74. How do you create a new MongoDB user?
 
-### Q75. What is the internal data structure of a MongoDB document?
+- [x] `db.createUser({})`
+- [ ] `db.insert({user: 1})`
+- [ ] `db.customers.newUser({})`
+- [ ] `db.newUser({})`
 
-- [x] JSON (JavaScript Object Notation)
-- [ ] BSON (Binary JSON)
+[MongoDB documentation](https://docs.mongodb.com/manual/tutorial/create-users/)
+
+#### Q75. What is the internal data structure of a MongoDB document?
+
+- [ ] JSON (JavaScript Object Notation)
+- [x] BSON (Binary JSON)
 - [ ] ORM (object relational mode)
 - [ ] MBF (MongoDB binary format)
-      Reference: [MongoDB documentation](https://docs.mongodb.com/guides/server/introduction/)
+
+[MongoDB documentation](https://www.mongodb.com/docs/manual/core/document/)
+[JSON and BSON](https://www.mongodb.com/json-and-bson)
+
+#### Q76. Which projection shows only the FirstName and lastName fields of a document in the customers collection?
+
+- [ ] `db.customers.find({}, {firstName: 1, lastName: 1})`
+- [x] `db.customers.find({}, {_id:0, firstName: 1, lastName: 1})`
+- [ ] `db.customers.find({_id: 0, year: 1, maek: 1, model: 1})`
+- [ ] `db.customers.find({}).project({firstName: 1, lastName: 1})`
+
+#### Q77. Documents in mongodb are atomic at the \_\_\_ level
+
+- [ ] database
+- [ ] field
+- [ ] no
+- [x] document
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/core/write-operations-atomicity/#:~:text=In%20MongoDB%2C%20a%20write%20operation,documents%20within%20a%20single%20document.)
+
+#### Q78. What should the priority of a member be in order to prevent it from becoming the primary in replica set?
+
+- [ ] 1
+- [ ] null
+- [x] 0
+- [ ] -1
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/tutorial/configure-secondary-only-replica-set-member/#assign-priority-value-of-0)
+
+#### Q79. You need to add an index to the large name collection in your production database. You do not want to have disruption of service for your users and you can't afford to have a team to do the work during after hours. What should you do?
+
+- [ ] Use the reIndex() command to add the index quickly.
+- [x] Use the createIndex() command with the option background = true.
+- [ ] Use the createIndex() command.
+- [ ] Use the createIndex() command with the option parallel = true.
+
+[MongoDB reference](https://www.mongodb.com/docs/v4.0/reference/method/db.collection.createIndex/#options)
+
+_Concurrency Changed in version 4.2._
+
+_MongoDB uses an optimized build process that obtains and holds an exclusive lock on the specified collection at the start and end of the index build. All subsequent operations on the collection must wait until createIndex() releases the exclusive lock._
+_createIndex() allows interleaving read and write operations during the majority of the index build._
+
+For more information on the locking behavior of
+createIndex(), see Index Builds on Populated Collections.
+
+#### Q80. When using aggregation $convert. which is not a parameter?
+
+- [ ] input
+- [x] output
+- [ ] to
+- [ ] onError
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/reference/operator/aggregation/convert/#definition)
+
+#### Q81. All tag values in tag sets must be \_.
+
+- [ ] JSON
+- [ ] integers
+- [x] strings
+- [ ] XML
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/core/read-preference-tags/)
+
+#### Q82. When using the mongoimport command, how can you drop the database before importing?
+
+- [ ] Use the -d option.
+- [ ] Use the mongooverwrite command instead of mongoimport.
+- [ ] Use the -drop option.
+- [x] Drop the database manually before importing.
+
+Argument: There is no -d option in the docs (https://www.mongodb.com/docs/database-tools/mongoimport/#options.)
+
+**Note:** Assuming you are asked to drop a collection instead while importing, the use the --drop option.
+
+#### Q83. To import a CSV file into MongoDB, which command should you issue?
+
+- [ ] upload
+- [ ] mongorestore
+- [ ] mongoi
+- [x] mongoimport
+
+#### Q84. A critical record must be replicated to the two other servers in the set. Which query guarantees that it is inserted as desired?
+
+- [ ] `db.inventory.insert({ prodid: "tab1122", qty : 10}, { writeConcern: { w: 2, wtimeout: 5000} })`
+- [ ] `db.inventory.insert({ prodid: "tab1122", qty : 10}, { writeConcern: { j: true} })`
+- [ ] `db.inventory.insert({ prodid: "tab1122", qty : 10}, { writeConcern: { w: 2, j:false, wtimeout: 5000} })`
+- [x] `db.inventory.insert({ prodid: "tab1122", qty : 10}, { writeConcern: { w: 2, j:true, wtimeout: 5000} })`
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/reference/write-concern/)
+
+#### Q85. What is the name of the default file used to configure MongoDB?
+
+- [ ] mongo.config
+- [x] mongod.conf
+- [ ] config.sys
+- [ ] .mdbconfig
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/reference/configuration-options/)
+
+#### Q86. After using the dropIndexes() command on your collection, one index remains.What can you do to drop the the remaining index?
+
+- [ ] Use dropIndexes({all:1}) with the all parameter.
+- [x] The required_id index cannot be deleted.
+- [ ] Call dropIndex({"<em>id</em>":1}) to force its removal.
+- [ ] Call dropIndex({"<em>id</em>"}) to force its removal.
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/reference/method/db.collection.dropIndex/)
+
+#### Q87. To scale horizontally, what does MongoDB use?
+
+- [x] sharding
+- [ ] replication
+- [ ] partition
+- [ ] backup
+
+[MongoDB reference](https://www.mongodb.com/basics/scaling)
+
+#### Q88. Your database collection holds web session information. One field, lastActivity, holds the timestamp of when the user was last active. You want to delete the user session after 30 minutes of inactivity. What is your best option?
+
+- [ ] Create Javascript function called via an interval timeout to delete all records older than 30 minutes.
+- [x] Create a TTL index on the lastActivity field and set expireAfterSeconds to 1800.
+- [ ] You have to create a stored procedure.
+- [ ] Every time you create a new record for expired older records and delete them.
+
+[MongoDB reference](https://www.mongodb.com/docs/manual/core/index-ttl/)
+
+#### Q89. In the MongoDB shell, how can you tell if an index was used with a query?
+
+- [x] `db.customers.find({lastName: 'smith'}).explain()`
+- [ ] `db.customers.find({lastName: 'smith'}).perf()`
+- [ ] `db.customers.find({lastName: 'smith'}).plan()`
+- [ ] `db.customers.find({lastName: 'smith'}).usedIndex()`
+
+#### Q90. You need to be able to quickly find a word in a text field. What should you do?
+
+- [x] Create a text index on the field and do a $text Query.
+- [ ] Create a single field index in descending order, and do a query for the word.
+- [ ] Do a $text query.
+- [ ] Create a $regex on the fields, and do a $regex query.
+
+#### Q91. What is the name of the default file used to configure MongoDB?
+
+- [ ] mongo.config
+- [x] mongod.conf
+- [ ] config.sys
+- [ ] .mdbconfig
+
+#### Q92. You have a collection named restaurants with the geographical information stored in the location property, how do you create a geospatial index on it?
+
+- [x] `db.restaurants.createIndex({location: "2dsphere"})`
+- [ ] `db.restaurants.geospatial({location: "2dsphere"})`
+- [ ] `db.restaurants.createIndex("2dsphere":"location")`
+- [ ] `db.restaurants.createIndex({geospatial: "location"})`
+
+#### Q93. What happens to a Replica set oplog if it runs out of memory?
+
+- [ ] `The oplog will be saved on one of the secondary servers.`
+- [x] `The oplog is capped collection and can't run out of memory`
+- [ ] `The MongoDB instance will fail`
+- [ ] `The oplog will stop recording logging information`
+
+#### Q94. Using the MongoDB shell, how do you remove the customer collection and its indexes?
+
+- [ ] `db.customers.remove({}).indexes();`
+- [ ] `db.customers.remove({});`
+- [x] `db.customers.drop();`
+- [ ] `db.customers.delete();`
+
+#### Q95. What is the primary advantage of using MongoDB as a NoSQL database over traditional relational databases?
+
+- [ ] Better support for complex joins
+- [x] Schema flexibility
+- [ ] ACID compliance
+- [ ] Fixed data structure
+
+_Explanation_ : MongoDB's primary advantage as a NoSQL database over traditional relational databases is its schema flexibility.
+
+#### Q96. What is a Replica Set in MongoDB?
+
+- [ ] A set of related database collections
+- [x] A group of MongoDB servers that maintain the same data set
+- [ ] A type of database index in MongoDB
+- [ ] A query language for MongoDB
+
+#### Q97. Which command is used to create a new database in MongoDB?
+
+- [ ] `createDatabase()`
+- [ ] `useDatabase()`
+- [ ] `db.createDatabase()`
+- [x] `use`
+
+#### Q98. What is the default port number for MongoDB?
+
+- [x] 27017
+- [ ] 3306
+- [ ] 5432
+- [ ] 8080
+
+#### Q99. Which of the following is a BSON data type in MongoDB?
+
+- [ ] Integer
+- [ ] Float
+- [x] Date
+- [ ] String
+
+#### Q100. What is the purpose of an index in MongoDB?
+
+- [ ] To define the structure of a document
+- [x] To improve query performance
+- [ ] To group related documents together
+- [ ] To store binary data
+
+#### Q101. Which operator is used for equality in MongoDB queries?
+
+- [x] `$eq`
+- [ ] `$ne`
+- [ ] `$gt`
+- [ ] `$lt`
+
+#### Q102. What is the role of the `mongod` process in MongoDB?
+
+- [ ] It is the MongoDB shell
+- [x] It is the primary daemon process for the MongoDB server
+- [ ] It is responsible for data replication
+- [ ] It is a tool for importing and exporting data
+
+#### Q103. Which method is used to remove a document from a collection in MongoDB?
+
+- [x] `deleteOne()`
+- [ ] `removeOne()`
+- [ ] `drop()`
+- [ ] `remove()`
+
+#### Q104. What is a GridFS in MongoDB?
+
+- [ ] A distributed file system
+- [ ] A system for managing database transactions
+- [x] A way to store large files in MongoDB
+- [ ] A type of database index
+
+#### Q105. Which aggregation stage in MongoDB is used to group documents by a specified expression and apply an accumulator expression to each group?
+
+- [x] `$group`
+- [ ] `$match`
+- [ ] `$project`
+- [ ] `$sort`
+
+#### Q106. What is sharding in MongoDB?
+
+- [ ] The process of dividing a database into multiple collections
+- [ ] The process of dividing a collection into multiple documents
+- [ ] The process of dividing a database into multiple smaller databases
+- [x] The process of distributing data across multiple servers
+
+#### Q107. Which operation is used to update a document in MongoDB?
+
+- [x] `update()`
+- [ ] `modify()`
+- [ ] `change()`
+- [ ] `set()`
+
+#### Q108. What is a TTL index in MongoDB?
+
+- [ ] An index used for full-text search
+- [x] An index that automatically expires documents after a specified amount of time
+- [ ] An index used for sorting documents in descending order
+- [ ] An index used for geospatial queries
+
+#### Q109. Which command is used to limit the number of documents returned in a MongoDB query?
+
+- [x] `limit()`
+- [ ] `count()`
+- [ ] `max()`
+- [ ] `skip()`
+
+#### Q110. What is a compound index in MongoDB?
+
+- [x] An index that combines multiple fields
+- [ ] An index that spans multiple collections
+- [ ] An index used for complex mathematical operations
+- [ ] An index used for querying nested documents
+
+#### Q111. Which operator is used to perform a logical OR operation in MongoDB queries?
+
+- [x] `$or`
+- [ ] `$and`
+- [ ] `$not`
+- [ ] `$nor`
+
+#### Q112. What is a covered query in MongoDB?
+
+- [ ] A query that returns covered documents
+- [ ] A query that covers multiple collections
+- [ ] A query that uses a covered cursor
+- [x] A query that uses a covered index
+
+#### Q113. Which method is used to create an index in MongoDB?
+
+- [ ] `addIndex()`
+- [ ] `index()`
+- [x] `createIndex()`
+- [ ] `makeIndex()`
+
+#### Q114. What is a compound shard key in MongoDB?
+
+- [x] A key made up of multiple fields used for sharding
+- [ ] A key used for encrypting data
+- [ ] A key used for sorting documents in ascending order
+- [ ] A key used for grouping documents
+
+#### Q115. What is the purpose of the `mongos` process in MongoDB?
+
+- [ ] It is a tool for monitoring server performance
+- [ ] It is a tool for managing database backups
+- [x] It is a routing service for sharded clusters
+- [ ] It is a tool for importing and exporting data

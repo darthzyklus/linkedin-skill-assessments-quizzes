@@ -1,11 +1,11 @@
-﻿### Microsoft Power BI
+## Microsoft Power BI
 
 #### Q1. A dataset that includes \_ can be used to create a map visualization. (Select all that apply.)
 
-    A. house numbers, street names
-    B. geospatial data
-    C. city names, country names
-    D. longitude, latitude
+A. house numbers, street names
+B. geospatial data
+C. city names, country names
+D. longitude, latitude
 
 - [x] A, B, C, D
 - [ ] A, C, D
@@ -35,10 +35,12 @@
 
 #### Q4. You are creating a report in Power BI Desktop and want to restrict the data to records where Country="Canada". To accomplish this, what do you need to create?
 
-- [x] a directive
-- [ ] a custom column
+- [ ] a directive
+- [x] a custom column
 - [ ] an indexed column
 - [ ] a parameter
+
+NOTE: The Power BI Documentation does not mention the word directive. The correct answer is B, NOT A!
 
 #### Q5. What is the primary benefit of using visualizations such as line charts, bar charts, and column charts?
 
@@ -56,24 +58,30 @@
 
 #### Q7. You need to add a required color to a bar chart. How can you add an exact color value to an existing bar chart?
 
-- [x] Click the color in the visual (e.g., the bars) and right-click to select the color.
+- [ ] Click the color in the visual (e.g., the bars) and right-click to select the color.
 - [ ] You cannot select custom colors in a bar chart or related visual.
 - [ ] Select the value closest to this color from the color formatting options.
-- [ ] Enter the hex value into the color formatting options.
+- [x] Enter the hex value into the color formatting options.
+
+NOTE: To enter a specific custom color (e.g., required color) you need to enter the required hex value. The correct answer is D.
 
 #### Q8. The Excel function IF is nearly the same as which DAX function?
 
 - [ ] SWITCH
-- [ ] IF
-- [x] IFX
+- [x] IF
+- [ ] IFX
 - [ ] IFS
+
+NOTE: DAX does not have IFX or IFS functions. The correct answer is B.
 
 #### Q9. Consider the Power BI extract, transform, and load process (ETL). During this process, data is read and then
 
-- [x] stored in S#### QL Server
+- [x] stored in SQL Server
 - [ ] written to an OLAP cube
 - [ ] assigned a data type
 - [ ] sorted by primary key
+
+[Reference](https://www.scaler.com/topics/sql-server/)
 
 #### Q10. Power BI's Publish to Web option allows you to embed visualizations within **\_**. (Select all that apply.)
 
@@ -84,10 +92,12 @@
 
 - [ ] A,C
 - [ ] C
-- [ ] A, B, C
-- [x] A, B, C, D
+- [x] A, B, C
+- [ ] A, B, C, D
 
-#### Q11. What can you do within the Power BI Desktop #### Query Settings pane? (Select all that apply.)
+NOTE: Documentation talks about blog posts, websites, emails or social media, but never mentions text messages. Correct answer is C
+
+#### Q11. What can you do within the Power BI Desktop Query Settings pane? (Select all that apply.)
 
     A. Rename a query step.
     B. Delete a query step.
@@ -95,25 +105,29 @@
     D. Reorder the steps.
 
 - [ ] B, C, D
-- [x] A, B, C, D [proof link](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-query-overview)
+- [x] A, B, C, D
 - [ ] A, B, D
 - [ ] A, B, C
 
-#### Q12. After you enter text in the #### Q&A box or O&A visual, Power BI will `\_` your data to create a list of appropriate visualizations.
+[proof link](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-query-overview)
+
+#### Q12. After you enter text in the Q&A box or O&A visual, Power BI will `\_` your data to create a list of appropriate visualizations.
 
 - [ ] filter and group
-- [ ] sort and filter
+- [x] sort and filter
 - [ ] sort, filter, and group
-- [x] sort and group
+- [ ] sort and group
+
+NOTE: Power BI won't group your text, but it does filter and sort it.
 
 #### Q13. You just deleted a dashboard in the Power BI service and want to get it back. What should you do?
 
-- [x] Press Ctrl+Z.
-      [proof link1](https://docs.microsoft.com/en-us/power-bi/visuals/service-tips-and-tricks-for-color-formatting)
-      [link2](https://www.edureka.co/community/26060/how-do-i-undo-something-in-power-bi)
+- [ ] Press Ctrl+Z.
 - [ ] Select Undo from the toolbar.
-- [ ] You cannot undo the deletion of a dashboard.
+- [x] You cannot undo the deletion of a dashboard.
 - [ ] Recover it from the Recycle Bin.
+
+NOTE: You cannot undo the deletion of a dashboard in PowerBI Service. The links that were previously provided addressed PowerBI Desktop, not PowerBI Service.
 
 #### Q14. You have a sales data source and want to relate the tables. The table that contains sales transactions is a **\_** table that contains product information is a \_ table .
 
@@ -151,17 +165,20 @@
 #### Q18. Formatting options within a visualization depend on what?
 
 - [x] the visualization you are formatting
-      [proof link](https://docs.microsoft.com/en-us/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties)
 - [ ] the editor you use
 - [ ] the visualization group
 - [ ] your permissions
 
+[proof link](https://docs.microsoft.com/en-us/power-bi/visuals/service-getting-started-with-color-formatting-and-axis-properties)
+
 #### Q19. What tool can you use in Power BI Desktop to reduce data?
 
 - [ ] report editor
-- [ ] Power Query Editor
+- [x] Power Query Editor
 - [ ] dashboard
-- [x] data modeler
+- [ ] data modeler
+
+NOTE: Data gets processed and reduced in the Power query editor. Corect answer is B.
 
 #### Q20. What is NOT a valid data connection type for Power BI Desktop?
 
@@ -270,10 +287,10 @@
 
 #### Q35. You want to combine several CSV files into a single data file after you connect a folder. What must be true about these CSV data files? (Select all that apply.)
 
-A. They must be stored in the same folder.
-B. They must have the same schema.
-C. They must have the same file type.
-D. They must have no duplicate data rows.
+    A. They must be stored in the same folder.
+    B. They must have the same schema.
+    C. They must have the same file type.
+    D. They must have no duplicate data rows.
 
 - [ ] B, C
 - [x] A, B, C
@@ -355,7 +372,7 @@ D. They must have no duplicate data rows.
 #### Q46. You have just pinned a visualization to a new dashboard. Before you can add another visualization, what must you do?
 
 - [ ] Save it.
-- [ ] Name it.
+- [x] Name it.
 - [ ] Refresh it.
 - [ ] Publish it.
 
@@ -368,7 +385,7 @@ D. They must have no duplicate data rows.
 
 #### Q48. What is the purpose of this code?
 
-// ProductCount = COUNT(Products[ProductID])
+`ProductCount = COUNT(Products[ProductID])`
 
 - [x] It is part of the documentation
 - [ ] It creates and formats a measure called ProductCount
@@ -385,7 +402,7 @@ D. They must have no duplicate data rows.
 #### Q50. Which Q&A feature helps you ask questions and refine your visualization?
 
 - [ ] error dialogs
-- [ ] autocomplete
+- [x] autocomplete
 - [ ] all of these answers
 - [ ] tooltips
 
@@ -405,7 +422,7 @@ D. They must have no duplicate data rows.
 
 - [ ] A, B
 - [ ] A, B, C
-- [ ] A, B, C, D
+- [x] A, B, C, D
 - [ ] A, B, D
 
 #### Q53. Your company's national maintenance team is divided into 12 regions, and the Issues report they use is filtered by the user's region. What report modification would help technicians while using the mobile app on the road? (Select all that apply.)
@@ -417,7 +434,7 @@ D. They must have no duplicate data rows.
 
 - [ ] A, B, D
 - [ ] A, B, C, D
-- [ ] A, B, C
+- [x] A, B, C
 - [ ] A, B
 
 #### Q54. What does the usage metric "Most Consumed Dashboards by Users" include? (Select all that apply.)
@@ -428,13 +445,13 @@ D. They must have no duplicate data rows.
     D. individual user downloads of the dashboard
 
 - [ ] A, B, C, D
-- [ ] A, B, C
+- [x] A, B, C
 - [ ] A, D
 - [ ] B, C, D
 
 #### Q55. How can you allow users to filter an entire report to display information for the last week, last two weeks, or last month?
 
-- [ ] Add a date field to the report filter area and set filtering to Relative date filtering.
+- [x] Add a date field to the report filter area and set filtering to Relative date filtering.
 - [ ] all of these answers
 - [ ] Add a date field to the page filter area, set filtering to Relative date filtering and click Extend.
 - [ ] Add a slicer for a date field to the report. Click the upper right corner and select Relative.
@@ -485,3 +502,334 @@ D. They must have no duplicate data rows.
 - [x] purchase; import
 - [ ] purchase; upload
 - [ ] upload; download
+
+#### Q62. You have two Excel spreadsheets with data from separate reporting units. Both spreadsheets have the same column names. What Power Query Editor feature can you use to create a unified dataset?
+
+- [ ] Unify
+- [x] Append
+- [ ] Merge
+- [ ] Group
+
+#### Q63. Power BI Q&A chooses the best visualization based on data type - for example, a ** chart for date data and a ** for state/province data.
+
+- [ ] column; map
+- [ ] line; map
+- [x] timeline; map
+- [ ] line; column
+
+#### Q64. In Power BI, what is the most important difference between tables related in a star schema and in a snowflake schema?
+
+- [ ] A snowflake schema cannot be modeled in Power BI.
+- [ ] A snowflake schema can be modeled only in Power BI service.
+- [x] A snowflake schema is much less efficient for Power BI.
+- [ ] A snowflake schema has more levels of lookup tables.
+
+#### Q65. What are benefits of modifying your Excel data source in the Power Query Editor rather than in Excel?
+
+    A. You can track the changes you make.
+    B. It is less error prone than manual editing.
+    C. It will not affect other users of the spreadsheet.
+    D. It "locks down" the spreadsheet columns in Excel.
+
+- [x] A, B, C
+- [ ] A, B, C, D
+- [ ] A, C, D
+- [ ] B, D
+
+#### Q66. Your report is based on imported data from Excel. What is a valid reason to use a slicer rather than a report-lever filter?
+
+    A. A slicer makes it easier for users to filter
+    B. Users should be able to see both filtered and nonfiltered values.
+    C. ????????
+
+- [x] A and B
+- [ ] B and C
+- [ ] A and C
+- [ ] There is no reason to use a slicer rather than a report-level filter.
+
+#### Q67. Within Power BI, how can a report be created?
+
+- [ ] directly from a dataset
+- [ ] starting with an existing report and editing it
+- [x] using an existing report
+- [ ] all of these answers
+
+#### Q68. In the Power BI service, filters are applied in what view?
+
+- [ ] Filter
+- [x] Editing
+- [ ] Reading
+- [ ] Query
+
+#### Q69. What are the first steps you take to connect to an Access database data source in Power BI?
+
+- [ ] You cannot to an Access database from Power BI.
+- [x] Click **Reports > Database > Connect** in Power BI Desktop
+- [ ] Click **Get Data > Database > Access Database > Connect** in Power BI Service
+- [ ] Click **Get Data > Database > Access Database > Connect** in Power BI Desktop
+
+#### Q70. What can you use Power BI for?
+
+- [x] all of these answers
+- [ ] to create visualizations
+- [ ] to model data
+- [ ] to generate reports
+
+#### Q71. What is the primary purpose of the Relationship view in Power BI Desktop?
+
+- [ ] to transform data
+- [ ] to add members to your team or group
+- [ ] to grant permission to view a specific table
+- [x] to relate tables
+
+#### Q72. What do you call a visualization that has the single purpose of filtering other visuals in the view?
+
+- [ ] waterfall
+- [ ] none of these answers
+- [ ] ArcGIS visual
+- [x] slicer
+
+#### Q73. To share a dashboard and your comments from a mobile device, \_ the dashboard.
+
+- [x] comment and share
+- [ ] annotate and share
+- [ ] publish
+- [ ] team share
+
+#### Q74. In the Power Query Editor, you have selected multiple columns. How do you set them all to the Whole Number data type?
+
+- [x] Click **Data Type Any** and select **Whole Number**.
+- [ ] Select **Group By** and select **Whole Number**.
+- [ ] Right-click the primary key and select **Whole Number**.
+- [ ] Right-click any column and select **Format Data**
+
+#### Q75. When will links to a web-published report stop working?
+
+- [x] approximately one hour after the report is deleted
+- [ ] approximately one month after the report is deleted
+- [ ] never
+- [ ] approximately one week after the report is deleted
+
+#### Q76. What are the first steps to connect to a data table on Wikipedia from Power BI Desktop?
+
+- [ ] **Get Data > OData feed > Web URL**
+- [x] **Get Data > Web > Enter Web URL**
+- [ ] **Get Data > Web Table > Enter Web URL**
+- [ ] **Get Data > Data Source > Enter Web URL**
+
+#### Q77. In the Power Query Editor, what command do you use to remove a symbol `-` for example, a `#` that appears in every data now of the selected column?
+
+- [ ] **Transform > Replace Values**
+- [x] **Transform > Remove Text**
+- [ ] **Transform > Remove Values**
+- [ ] **Transform > Replace Errors**
+
+#### Q78. Which type of visualization is best when you want to compare proportions in a large volume of data with multiple categories and subcategories?
+
+- [ ] donut chart
+- [ ] gauge chart
+- [x] treemap
+- [ ] waterfall
+
+#### Q79. Of the Power BI tools, only Power BI Desktop allows you to do what?
+
+- [x] all of these answers.
+- [ ] Work offline.
+- [ ] Create data models.
+- [ ] Add DAX calculations.
+
+#### Q80. What does the Power BI Advanced Editor allow you to do? (Select all that apply.)
+
+    A. Access the advanced editing commands.
+    B. View the M code created by the Power Query Editor.
+    C. Enter M code to shape your data.
+    D. Edit the M code created by the Power Query Editor.
+
+- [ ] A, B
+- [ ] A,B,C,D
+- [x] B,C,D
+- [ ] A,B,C
+
+#### Q81. Why might you use the DAX DIVIDE function rather than a forward slash (/) when creating a measure? (Select all that apply.)
+
+    A. DIVIDE does not raise an error when the denominator is zero.
+    B. DIVIDE is faster.
+    C. A forward slash does not work with text columns.
+    D. DIVIDE stores the numerator and denominator locally.
+
+- [ ] A,B,C,D
+- [ ] A,B
+- [ ] B,C
+- [x] A
+
+#### Q82. when creating a new relationship between the Continents and Countries tables, this error is returned: "One of the columns must have unique values." How can you fix this? (Select all that apply.)
+
+    A. Add another table with unique keys
+    B. Remove duplicate rows so the Countries table has a column with unique IDs
+    C. Remove duplicate rows so the Continents table has a column with unique IDs.
+    D. Correct the cardinality of the relationship
+
+- [ ] A, C, D
+- [ ] B, C
+- [x] A, B
+- [ ] B, C, D
+
+[Proof link](https://docs.microsoft.com/en-us/archive/blogs/cansql/relationships-in-power-bi-fixing-one-of-the-columns-must-have-unique-values-error-message)
+
+#### Q83. Your report is based on imported data from Excel. What is a valid reason to use a slicer rather than a report-level filter?
+
+    A. A slicer makes it easier for users to filter.
+    B. Users should be able to see both filtered and unfiltered values.
+    C. Query speed is critical.
+
+- [ ] B and C
+- [x] A and B
+- [ ] There is no reason to use a slicer rather than a report-level filter.
+- [ ] A and C
+
+#### Q84. You have pinned a bar chart visualization to a dashboard. If you then modify the bar chart in the underlying report, what will the dashboard display?
+
+- [ ] It will display nothing. You will need to re-pin the bar chart to the dashboard.
+- [x] It will display the bar chart as it appears in the report now.
+- [ ] It will display an error message where the bar chart had been pinned.
+- [ ] It will display the bar chart as it appeared when it was pinned.
+
+#### Q85. In the Power Query Editor, how do you add an index column to an existing dataset?
+
+- [ ] On the Transform tab, click Add Column > Index.
+- [x] On the Add Column tab, click Add Index Column.
+- [ ] none of these answers
+- [ ] On the Home tab, click Add Index Column.
+
+#### Q86. Power BI desktop has a **\_** tool, found under the View tab, which can be used to record the time taken for each of the processes required to render a report to complete.
+
+- [ ] Simulation
+- [x] Performance Analyzer
+- [ ] Reporting Analytics
+- [ ] DAX Studio
+
+#### Q87. When you are looking for outliers, Z-scores above **\_** are a good starting point.
+
+- [ ] 30
+- [x] 3
+- [ ] 10
+- [ ] 100
+
+#### Q88. In DAX, a semi-additive measure can accumulate values over some dimension, but typically not **\_**.
+
+- [ ] calculations
+- [x] time
+- [ ] magnitude
+- [ ] rate
+
+#### Q89. In Power BI's Power Query Editor, a field data type shown as **\_** means the money data type.
+
+- [ ] a pile of coins icon
+- [ ] Money
+- [x] $
+- [ ] a stack of bills icon
+
+#### Q90. Which of the following choices is not a viewing option in the view selector of Power BI Desktop?
+
+- [ ] report view
+- [ ] model view
+- [x] query view
+- [ ] data view
+
+#### Q91. Which value for the type parameter in the DAX function PATHITEM indicates integer?
+
+- [ ] 0
+- [ ] "Integer"
+- [ ] TRUE
+- [x] 1
+
+#### Q92. Which type of chart in Power BI is beneficial for helping you visualize data over time?
+
+- [ ] pie charts
+- [ ] stacked column charts
+- [ ] tree maps
+- [x] line charts
+
+#### Q93. To combine multiple tables into a single table in Power BI, use the **\_** tool in the query editor.
+
+- [x] Append
+- [ ] Combine
+- [ ] Query
+- [ ] Report
+
+#### Q94. Which time intelligence function in DAX can be used for seeing month-on-month data?
+
+- [x] ParallelPeriod
+- [ ] TotalYTD
+- [ ] SamePeriodLastYear
+- [ ] MonthOnMonth
+
+#### Q95. Which part of Microsoft's data gateway's configuration allows you to switch between TCP and HTTPS modes?
+
+- [ ] Diagnostics
+- [ ] Service settings
+- [ ] Connectors
+- [x] Network
+
+#### Q96. You pinned an Excel pivot table to a dashboard. What will other users be allowed to do with this visualization?
+
+- [ ] View the pivot table.
+- [x] all of these answers
+- [ ] Rearrange pivot table fields.
+- [ ] Drill down in the pivot table.
+
+#### Q97. You pinned an Excel pivot table to a dashboard. What will other users be allowed to do with this visualization?
+
+- [ ] drill down in the pivot table.
+- [ ] Rearrange pivot table fields.
+- [ ] view the pivot table
+- [x] all of these answers
+
+#### Q98. Using Power BI service, you want to share a set of visualizations with your team so that they can, in turn, share the content with others. To do this, what should you share?
+
+- [ ] a report
+- [ ] a tile
+- [ ] a dashboard
+- [x] all of these answers
+
+#### Q99. What is true about paginated reports? (Select all that apply)
+
+    A. They are formatted to fit well on a page.
+    B. They shrink the report data to fit on a page.
+    C. They truncate the report data to fit on a single page.
+    D. They are both printable and shareable.
+
+- [x] A, D
+- [ ] B or C, both on user choice
+- [ ] A. B, D
+- [ ] A, C, D
+
+[reference](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-share-dashboards)
+
+#### Q100. What is the primary function of the Power Query Editor in Power BI?
+
+- [ ] Data modeling
+- [x] Data transformation and preparation
+- [ ] Data visualization
+- [ ] Data sharing and collaboration
+
+#### Q101. What is the purpose of DAX (Data Analysis Expressions) in Power BI?
+
+- [ ] To create visualizations
+- [ ] To design data models
+- [x] To perform advanced data calculations and aggregations
+- [ ] To connect to external data sources
+
+#### Q102. In Power BI, what is a "calculated column" used for?
+
+- [ ] It's a calculated measure used in visuals.
+- [ ] It's a calculated field that aggregates data.
+- [x] It's a column that you add to a table with a formula.
+- [ ] It's a column that displays hierarchical data.
+
+#### Q103. Which type of Power BI visual is most suitable for comparing values across categories using bars of varying lengths?
+
+- [ ] Line chart
+- [ ] Scatter plot
+- [ ] Pie chart
+- [x] Bar chart

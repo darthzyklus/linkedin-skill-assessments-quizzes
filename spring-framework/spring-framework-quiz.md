@@ -7,7 +7,7 @@
 - [ ] Filters are used with a checksum algorithm that will filter invalid bytes out of an octet stream a multipart upload and allow for chained processing of WebDispatcherServlet requests.
 - [ ] Filters are used to validate request parameters out of the byte stream request body and allow for processing of requests from the DispatcherRequestServlet.
 
-Reference: [HandlerInterceptors vs. Filters in Spring MVC](https://www.baeldung.com/spring-mvc-handlerinterceptor-vs-filter). Also there is no such thing as DispatcherRequestServlet in Spring.
+[HandlerInterceptors vs. Filters in Spring MVC](https://www.baeldung.com/spring-mvc-handlerinterceptor-vs-filter). Also there is no such thing as DispatcherRequestServlet in Spring.
 
 #### Q2. How is a resource defined in the context of a REST service?
 
@@ -16,12 +16,16 @@ Reference: [HandlerInterceptors vs. Filters in Spring MVC](https://www.baeldung.
 - [ ] A REST service has a pool of resources composed of allocations of memory that allow a request to be processed.
 - [ ] A resource for a REST service is an explicit allocation of a thread or CPU cycles to allow a request to be processed.
 
+[Rest Service in Spring](https://spring.io/guides/tutorials/rest/)
+
 #### Q3. Which of these is a valid Advice annotation?
 
 - [ ] @AfterError
 - [x] @AfterReturning
 - [ ] @AfterException
 - [ ] @AfterExecution
+
+[Spring Advice Type Annotation](https://www.baeldung.com/spring-aop-advice-tutorial)
 
 #### Q4. What does a ViewResolver do?
 
@@ -30,6 +34,8 @@ Reference: [HandlerInterceptors vs. Filters in Spring MVC](https://www.baeldung.
 - [ ] It creates a unique view determined by the uers's browser type,supporting cross-browser compatibility.
 - [ ] It maps custom parameters to SQL views in the database, allowing for dynamic content to be created in the response.
 
+[View Resolution in Spring MVC](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-servlet/viewresolver.html)
+
 #### Q5. How are Spring Data repositories implemented by Spring at runtime?
 
 - [ ] Spring automatically generated code for you based on your YAML config that defined a MethodInterceptor chain that intercept calls to the instance and computed SQL on the fly.
@@ -37,12 +43,16 @@ Reference: [HandlerInterceptors vs. Filters in Spring MVC](https://www.baeldung.
 - [ ] The Spring JDK proxy creates a separate runtime process that acts as an intermediary between the database and the Web server, and intercepts calls to the instance and handles requests.
 - [ ] Spring automatically generated code for you based on your XML config files that define a SpringMethodAutoGeneration factory that intercepts calls to the instance and creates dynamic method that computer SQL on the fly.
 
+[Explained QnA](https://stackoverflow.com/questions/38509882/how-are-spring-data-repositories-actually-implemented)
+
 #### Q6. What is SpEL and how is it used in Spring?
 
 - [ ] SpEL(Spring Expression Language) runs in the JVM and can act as a drop-in replacement for Groovy or other languages.
 - [x] SpEL(Spring Expression Language) supports boolean and relational operators and regular expressions, and is used for querying a graph of objects at runtime.
 - [ ] SpEL(Spring Expression Language) allows you to build, configure,and execute tasks such as building artifacts and downloading object dependencies.
 - [ ] SpEL(Spring Expression Language) natively transpiles one JVM language to another, allowing for greater flexibility.
+
+[Spring Expression Documentation](https://docs.spring.io/spring-framework/docs/3.0.x/reference/expressions.html)
 
 #### Q7. The process of linking aspects with other objects to create an advised object is called
 
@@ -98,11 +108,13 @@ public class Print implements InitializingBean {
 }
 ```
 
-- [x] Nothing will print
+- [ ] Nothing will print
 - [ ] startup
       init
 - [ ] init
-- [ ] startup
+- [x] startup
+
+Explanation: SpringApplication.run method returns the created Context, so main method will continue running and print "startup". Class Print is not a Spring Bean, because it is not annotated with @Component, so it will not be initialized.
 
 #### Q13. Which println statement would you remove to stop this code throwing a null pointer exception?
 
@@ -112,7 +124,7 @@ public class Test implements InitializingBean {
      @Autowired
      ApplicationContext context;
      @Autowired
-     static SimpleDateFormt formatter;
+     static SimpleDateFormat formatter;
 
      @Override
      public void afterPropertiesSet() throws Exception {
@@ -266,7 +278,7 @@ public class SampleController {
 - [x] It's the servlet filter proxy delegating to a filter bean specified in web.xml. All calls to the filter proxy will be delegated to that servlet filter bean.
 - [ ] It's the web servlet daemon filter proxy that delegates to a bean specified in spring.security.factories. All calls to the filter proxy that do not contain a proper route will return an error.
 
-Reference: [Overview and Need for DelegatingFilterProxy in Spring](https://www.baeldung.com/spring-delegating-filter-proxy)
+[Overview and Need for DelegatingFilterProxy in Spring](https://www.baeldung.com/spring-delegating-filter-proxy)
 
 #### Q31. What value does Spring Boot Actuator provide?
 
@@ -275,7 +287,7 @@ Reference: [Overview and Need for DelegatingFilterProxy in Spring](https://www.b
 - [ ] It's a CLI that allows you to modify the configuration of a running Spring Boot application without the need for restarting or downtime.
 - [ ] It provides out-of-the-box functionality that integrates wiltr?third-party metrics platforms to automatically scale up and down the number of instances of the Spring Boot application.
 
-Reference: [Spring Boot Actuator](https://www.baeldung.com/spring-boot-actuators)
+[Spring Boot Actuator](https://www.baeldung.com/spring-boot-actuators)
 
 #### Q32. What is the purpose of the @ContextConfiguration annotation in a JUnit Test?
 
@@ -284,7 +296,7 @@ Reference: [Spring Boot Actuator](https://www.baeldung.com/spring-boot-actuators
 - [x] It defines metadata at the class-level to determine how to load or configure an ApplicationContext in Spring integration tests.
 - [ ] It automatically generates JavaDocs for annotated classes to provide additional context about the purpose of the class.
 
-Reference: [@ContextConfiguration Example in Spring Test](https://www.concretepage.com/spring-5/contextconfiguration-example-spring-test)
+[@ContextConfiguration Example in Spring Test](https://www.concretepage.com/spring-5/contextconfiguration-example-spring-test)
 
 #### Q33. How are authentication and authorization different?
 
@@ -337,10 +349,10 @@ Reference: [@ContextConfiguration Example in Spring Test](https://www.concretepa
 
 #### Q40. How do you inject a dependency into a Spring bean?
 
-- [x] any of these answers
+- [ ] Use field injection.
 - [ ] Annotate a Setter method with the @Autowired annotation.
 - [ ] Specify parameters in the constructor with an optional @Autowired annotation.
-- [ ] Use field injection.
+- [x] Any of the above.
 
 #### Q41. Consider the properties file application.properties. How would you load the property my.property?
 
@@ -392,7 +404,7 @@ private String val;
 
 #### Q44. In the Spring Bean lifecycle pictured, what should the third step of the process be?
 
-![Alt text](https://usaupload.com/cache/plugins/filepreviewer/69009/c5e6eedce33819dd3b16bff7590d244b0fedf52561323c444b4b63e19e61e2e8/1100x800_cropped.jpg 'Spring bean lifecycle')
+![diagram](images/spring-framework_q44.png)
 
 - [ ] Persist bean definitions into a database
 - [x] Instance bean objects
@@ -406,7 +418,7 @@ private String val;
 - [ ] root.logger.level
 - [x] logging.level.root
 
-Reference: [Logging in Spring Boot](https://www.baeldung.com/spring-boot-logging)
+[Logging in Spring Boot](https://www.baeldung.com/spring-boot-logging)
 
 #### Q46. What is a Spring bean uniquely identified?
 
@@ -425,9 +437,9 @@ Reference: [Logging in Spring Boot](https://www.baeldung.com/spring-boot-logging
 #### Q48. How does the transaction propagation setting impact the behavior of transactions?
 
 - [ ] It ensures that transactions that are commited to the database are propagated to all the shards of a clustered database system.
-- [ ] None of these answers is correct.
-- [ ] It guarantees that transactions that are submitted to the database cluster are propagated to all the nodes of a clustered database cloud.
 - [x] It enforces that a logical transaction scope is created for each method that determines rollback-only status, with an outer transaction scope being logically independent from the inner transaction scope.
+- [ ] It guarantees that transactions that are submitted to the database cluster are propagated to all the nodes of a clustered database cloud.
+- [ ] None of the above
 
 #### Q49. What is printed when this code is run as a @SpringBootApplication?
 
@@ -472,25 +484,25 @@ Explanation: missing `@Autowired` on `private TestService service` or on the set
 2. A point during the execution of a program, such as the execution of a method or the handling of an exception.
 3. An action taken by an aspect at a particular join point.
 
-- [ ]
+- [ ] &shy;
   ```
   1. Pointcut
   2. Advice
   3. Join point
   ```
-- [ ]
+- [ ] &shy;
   ```
   1. Join point
   2. Pointcut
   3. Advice
   ```
-- [ ]
+- [ ] &shy;
   ```
   1. Advice
   2. Pointcut
   3. Join point
   ```
-- [x]
+- [x] &shy;
   ```
   1. Pointcut
   2. Join point
@@ -515,7 +527,7 @@ Explanation: sha-1 is not considered secure anymore: https://en.wikipedia.org/wi
 - [ ] any method that implements Loggable
 - [ ] any method that extends Loggable
 
-Reference: [Difference between @target and @within (Spring AOP)](https://stackoverflow.com/questions/51124771/difference-between-target-and-within-spring-aop)
+[Difference between @target and @within (Spring AOP)](https://stackoverflow.com/questions/51124771/difference-between-target-and-within-spring-aop)
 
 #### Q54. What is printed when this code is run as a @SpringBootApplication?
 
@@ -575,12 +587,12 @@ Explanation: `@Bean`-method in `@Configuration` must be overridable. Remove the 
 
 #### Q58. Assuming no additional configuration is provided, what is the first selection criteria Spring uses to choose a bean when autowiring a property?
 
-- [ ] none of these answers
+- [x] bean name
 - [ ] bean type
 - [ ] bean size
-- [x] bean name
+- [ ] None of the above
 
-### Q59. What is the result of calling the map controller method using the following HTTP request?
+#### Q59. What is the result of calling the map controller method using the following HTTP request?
 
 ```
 POST localhost:8080/map
@@ -654,7 +666,7 @@ class Service {}
 - [x] Annotate a controller method with `@RequestMapping`, or a HTTP verb-specific annotation with a String URI pattern parameter (and other params as needed), which is supported through a `RequestMappingHandlerMapping/Adapter`.
 - [ ] Register a controller as a bean. Then, using a specific naming convention for the methods, the RequestMappingHandlerAdapter will automatically configure your endpoints based on values passed into the bean definition.
 
-Reference: [Spring RequestMapping](https://www.baeldung.com/spring-requestmapping). Spring does not use naming conventions for web requests (unlike e.g. for the Data Repositories)
+[Spring RequestMapping](https://www.baeldung.com/spring-requestmapping). Spring does not use naming conventions for web requests (unlike e.g. for the Data Repositories)
 
 #### Q63. What methods does the Pointcut expression below reference?
 
@@ -664,7 +676,8 @@ Reference: [Spring RequestMapping](https://www.baeldung.com/spring-requestmappin
 - [ ] any method with a name that begins with String "setter" with a single parameter
 - [x] any method with a name that begins with String "setter"
 - [ ] any method with a name that contains the String "setter"
-      Source: [baeldung](https://www.baeldung.com/spring-aop-pointcut-tutorial#1-execution)
+
+[baeldung](https://www.baeldung.com/spring-aop-pointcut-tutorial#1-execution)
 
 #### Q64. What pattern does Spring MVC implement to delegate request processing to controllers?
 
@@ -678,9 +691,9 @@ Reference: [Spring RequestMapping](https://www.baeldung.com/spring-requestmappin
 `within(com.linkedin.service..*)`
 
 - [ ] any join point only within the service package
-- [ ] This is not valid Pointcut expression
-- [ ] any method in a class that autowires a service bean
 - [x] any join point within the service package or one of its subpackages
+- [ ] any method in a class that autowires a service bean
+- [ ] This is not valid Pointcut expression
 
 #### Q66. What is the output from invoking this Actuator endpoint in an unmodified Spring Boot application generated using Spring Intializr?
 
@@ -699,4 +712,240 @@ Reason: By default, all the endpoints are enabled in Spring Boot Application exc
 - [x] Test classes can implement the ApplicationContextAware interface or autowire the ApplicationContext.
 - [ ] The context is automatically injected in every test so you can just call getSpringApplicationContextInstance() anywhere in a test to get the current context.
 - [ ] You can just add the parameter Context context to any method so that the context is automatically wired in.
-      Source: [spring(dot)io](https://spring.io/blog/2011/06/21/spring-3-1-m2-testing-with-configuration-classes-and-profiles#:~:text=By%20default%20the%20ApplicationContext%20is,%40Resource%20%2C%20or%20%40Inject%20.)
+
+[spring(dot)io](https://spring.io/blog/2011/06/21/spring-3-1-m2-testing-with-configuration-classes-and-profiles#:~:text=By%20default%20the%20ApplicationContext%20is,%40Resource%20%2C%20or%20%40Inject%20.)
+
+#### Q68. What interface can be specified as a parameter in a controller method signature to handle file uploads?
+
+- [ ] FilePath
+- [x] MultipartFile
+- [ ] File
+- [ ] MvcFile
+
+#### Q69. What is the purpose of this endpoint?
+
+```java
+@GetMapping("api/v1/domain/resource/{id}")
+public Pojo getPojo(@PathVariable("id") String id) {
+  return testService.getPojo(id);
+}
+```
+
+- [ ] This endpoint is designed to delete an object of the typetype Pojo with the passed in path variable
+- [x] This endpoint is designed to return JSON mapped to the object type Pojo with the passed in id.
+- [ ] This endpoint returns the path variable that describes the Pojo's location within the container.
+- [ ] This endpoint is designed to update an existing resource of the object type Pojo with the passed in id.
+
+#### Q70. What property can be used to set the active Spring profiles
+
+- [ ] active.profile
+- [ ] active.spring.profiles
+- [x] spring.profiles.active
+- [ ] profiles
+
+#### Q71. Which statement is true regarding loading and instantiation of Spring factories?
+
+- [ ] During startup, the SpringFactoryInitializr collects all files in the CONFIG-INF directory from each dependency and downloads binaries to run each file.
+- [x] During startup, the SpringFactoriesLoader gets a list of config and collects all the files in META-INF directory from dependencies. Then it builds a composite list for application context configurations.
+- [ ] During shutdown, the SpringFactoryDestructor collects all the files in META-INF directory from each dependency and begins shutting down each thread and process.
+- [ ] During startup and shutdown, the SpringFactoryInitializr downloads project configs for all configured dependencies.
+
+#### Q72. What methods does this Pointcut expression reference?
+
+```java
+     execution(* com.linkedin.TestService.*(..))
+```
+
+- [x] all methods of classes in the com.linkedin.TestService package
+- [ ] all methods of classes in the com.linkedin.TestService package annotated whith @Service
+- [ ] This Pointcut is not valid.
+- [ ] all methods defined by the TestService interface
+
+#### Q73. When configuring an application, which configuration is given precedence by Spring?
+
+- [ ] profile specific application-{profile}.properties files
+- [ ] Java System Properties
+- [ ] application properties located in an application.properties file inside the application.jar
+- [x] profile specific application-{profile}.properties files located outside the application.jar
+
+#### Q74. What interface is used to represent a permission in Spring Security?
+
+- [ ] GrantedAuthority
+- [ ] SecurityChain
+- [ ] PermissionMatrix
+- [x] AccessRule
+
+#### Q75. What is the difference between constructor injection and setter injection?
+
+- [ ] Constructor injection overrides setter injection.
+- [ ] Setter injection creates a new instance if any modification occurs.
+- [x] You can't use constructor injection for partial injection.
+- [ ] Constructor injection is more flexible than setter injection.
+
+[Explanation] There are many key differences between constructor injection and setter injection.
+
+Partial dependency: can be injected using setter injection but it is not possible by constructor. Suppose there are 3 properties in a class, having 3 arg constructor and setters methods. In such case, if you want to pass information for only one property, it is possible by setter method only.
+Overriding: Setter injection overrides the constructor injection. If we use both constructor and setter injection, IOC container will use the setter injection.
+Changes: We can easily change the value by setter injection. It doesn't create a new bean instance always like constructor. So setter injection is flexible than constructor injection.
+
+#### Q76. Which println would you remove to stop this code from throwing a null pointer exception?
+
+```java
+@Component
+public class Test implements InitializingBean {
+     @Autowired
+     ApplicationContext context;
+     @Autowired
+     static SimpleDateFormat formatter;
+
+     @Override
+     public void afterPropertiesSet() throws Exception {
+          System.out.println(context.containsBean("formatter") + " ");
+          System.out.println(context.getBean("formatter").getClass());
+          System.out.println(formatter.getClass());
+          System.out.println(context.getClass());
+     }
+}
+@Configuration
+class TestConfig {
+     @Bean
+     public SimpleDateFormat formatter() {
+          return new SimpleDateFormat();
+     }
+}
+```
+
+- [ ] formatter.getClass()
+- [ ] context.containsBean("formatter")
+- [x] context.getBean("formatter").getClass()
+- [ ] context.getClass()
+
+Explanation: Here only one line can throw NPE. Calling getClass() from context.getBean("formatter") can potentially throw NPE if context.getBean("formatter") will return null.
+
+#### Q77. What is the default rollback policy?
+
+- [ ] A rollback is triggered during any error that occurs during the transaction.
+- [ ] When an instance or subclass of Exception is thrown, this triggers a rollback, while any runtime exceptions do not.
+- [ ] Anytime an instance or subclass of Throwable is thrown, this triggers a rollback.
+- [x] When an instance or subclass of RuntimeException is thrown, this triggers a rollback, while any checked Exception does not.
+
+#### Q78. What is the difference between a CrudRepository and a JpaRepository?
+
+- [ ] The CrudRepository extends the PagingAndSortingRepository, while the JpaRepository does not.
+- [x] The CrudRepository exposes a superset of interface methods containing every datastore-specific method supported by Spring data. The JpaRepository contains only those specific to Spring Data JPA.
+- [ ] The CrudRepository is a base interface within Spring Data core that exposes a dedicated set of functions. The JpaRepository is a store-specific interface that exposes functionality specific to JPA.
+- [ ] The CrudRepository is part of the Java EE API, while JpaRepository is specific to Spring Data.
+
+#### Q79. What is the security filter chain?
+
+- [ ] It's a security filter chain that provides authentication with manual intervention such that multiple administrators of the system are able to approve users with auditability and traceability.
+- [ ] It's a series of user-completed activities—such as password authorization, token verification, and many others—that require multiple factors of authentication to increase the level of security in the system.
+- [x] It's a servlet filter chain where each filter has a specific responsibility such as security context, user and password authorization, exception translation, or filter security interception, processed in order.
+- [ ] It's a security filter chain that consumes multiple factors of authentication—such as password, token verification, biometrics, and IP whitelisting—to successfully log a user into the system.
+
+#### Q80. Which is not a valid stereotype annotation?
+
+- [ ] @Component
+- [ ] @Service
+- [x] @HtmlController
+- [ ] @Controller
+
+#### Q81. Which statement is true regarding loading and instantiation of Spring factories?
+
+- [x] During startup, the SpringFactoriesLoader gets a list of configs and collects all the files in META-INF directory from dependencies. Then it builds a composite list for application context configurations.
+- [ ] During shutdown, the SpringFactoryDestructor collects all the files in META-INF directory from each dependency and begins shutting down each thread and process.
+- [ ] During startup, the SpringFactoryInitializr collects all files in the CONFIG-INF directory from each dependency and downloads binaries to run each file.
+- [ ] During startup and shutdown, the SpringFactoryInitializr downloads project configs for all configured dependencies.
+
+#### Q83. What is a transaction isolation level?
+
+- [ ] executing each transaction in its own dedicated threadpool to facilitate thread isolation
+- [ ] facilitating each transaction to occur on its own dedicated vCPU to guarantee throughput
+- [x] the level of visibility and access a transaction has to the units of work of other transactions such as uncommitted writes
+- [ ] executing each transaction on its own process to provide resource isolation
+
+#### Q84. What does the statement "Spring offers fully-typed advice" mean?
+
+- [ ] You declare the parameters you need in the advice signature rather than work with Object[] arrays.
+- [ ] You work with a collection of Objects that need to be explicitly casted.
+- [x] You work with an array of a Generic type T[] instead of Object[] arrays.
+- [ ] You are able to undo type erasure in the Object[] that is exposed
+
+#### Q84. Which are considered to be typical, common, cross-cutting concerns that would be a good fit for AOP? (Choose 3)
+
+    - A. Creating SQL queries
+    - B. Logging
+    - C. Filtering, sorting and transforming data
+    - D. Transaction management
+    - E. Audit logging
+    - F. Business logic
+
+- [ ] A, D, F
+- [ ] D, E, F
+- [ ] A, B, F
+- [x] B, D, E
+
+#### Q85. Which of the Service implementations will be created first?
+
+```java
+@SpringBootApplication
+public class App {
+
+     @Autowired
+     Service service;
+
+     public static void main(String[] args) {
+          SpringApplication.run(App.class, args);
+     }
+}
+@Primary
+@Component
+class Service2Impl implements Service {
+
+    Service2Impl() {
+        System.out.println("Service2");
+    }
+}
+
+@Component("Service")
+class Service1Impl implements Service {
+
+    Service1Impl() {
+        System.out.println("Service1");
+    }
+}
+
+interface Service{}
+```
+
+- [ ] Service1
+- [x] Service2
+- [ ] A NullPointerException is thrown at runtime.
+- [ ] There is no way to know until runtime.
+
+Explaination: [Primary indicates that a bean should be given preference when multiple candidates are qualified to autowire a single-valued dependency](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/context/annotation/Primary.html)
+
+#### Q86. What methods does this Pointcut expression reference?
+
+```java
+     execution(* com.linkedin.service..*.*(..))
+```
+
+- [x] all methods defined in the service package or one of it's subpackages
+- [ ] all methods defined in the service package
+- [ ] all methods defined in a service interface
+- [ ] The pointcut is invalid.
+
+#### Q87. Which is not a core facet of Spring's ecosystem?
+
+- [ ] Spring Data
+- [ ] Spring MVC
+- [x] Spring Bootstrap
+- [ ] Spring Cloud
+
+#### Q88. A\_ is a key-value map of data used to render the page, and the \_ is a template of the page that is filled with data.
+
+- [ ] model; view
+- [ ] hashmap; serviet
+- [x] view; model
+- [ ] request; view
